@@ -86,15 +86,15 @@
 		<!-- Decorative background curves (sit behind all content) -->
 		<div aria-hidden="true" class="pointer-events-none absolute inset-0 overflow-hidden z-0">
 			<svg class="absolute left-0 top-[22%] w-full h-[260px]" viewBox="0 0 1440 260" preserveAspectRatio="none" fill="none">
-				<path d="M-20 170 C 240 40, 460 250, 760 140 S 1220 30, 1460 120" stroke="#f6b8a5" stroke-opacity="0.3" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+				<path d="M-20 170 C 240 40, 460 250, 760 140 S 1220 30, 1460 120" stroke="#f6b8a5" stroke-opacity="0.15" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
 			</svg>
 			<svg class="absolute left-0 top-[58%] w-full h-[300px]" viewBox="0 0 1440 300" preserveAspectRatio="none" fill="none">
-				<path d="M-20 90 C 300 250, 620 20, 900 170 S 1300 260, 1460 140" stroke="#b4d6bc" stroke-opacity="0.3" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+				<path d="M-20 90 C 300 250, 620 20, 900 170 S 1300 260, 1460 140" stroke="#b4d6bc" stroke-opacity="0.15" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
 			</svg>
 		</div>
 		<div class="relative z-10 flex flex-col w-full">
 			<!-- Top Hero Visual Banner Section -->
-			<section class="relative w-full max-w-[1240px] mx-auto px-gutter pt-space-md overflow-hidden">
+			<section class="relative w-full max-w-[1240px] mx-auto px-gutter pt-space-md">
 				<div
 					class="relative w-full rounded-2xl overflow-hidden shadow-[0_12px_40px_-8px_rgba(36,33,31,0.12)] bg-surface-container-lowest">
 					<!-- Watercolor Hero Banner Visual -->
@@ -102,7 +102,7 @@
 						class="relative w-full aspect-[16/9] md:aspect-[21/10] max-h-[580px] overflow-hidden bg-surface-container-low">
 						<img alt="插畫：兩位朋友並肩坐在湖邊草坡，遠眺雪山與晨光，櫻花枝輕輕垂下。"
 							class="w-full h-full object-cover object-center transform scale-[1.01] hover:scale-[1.02] transition-transform duration-700 ease-out"
-							src="hero.svg">
+							src="hero.jpeg">
 						<div
 							class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent pointer-events-none">
 						</div>
@@ -592,29 +592,11 @@
 							<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
 								港幣 $100 以上捐款憑收據可申請香港稅務寬免。
 							</p>
-							<!-- Amount Selector Buttons -->
-							<div class="grid grid-cols-3 gap-2 mb-space-md">
-								<button
-									class="donation-btn py-2 px-3 rounded-xl bg-surface-container font-label-md text-label-md text-on-surface hover:bg-secondary-fixed/60 transition-colors text-center font-medium"
-									onclick="selectAmount(this, 300)">HK$ 300</button>
-								<button
-									class="donation-btn py-2 px-3 rounded-xl bg-secondary-fixed text-on-secondary-fixed-variant font-label-md text-label-md transition-colors text-center font-medium"
-									onclick="selectAmount(this, 500)">HK$ 500</button>
-								<button
-									class="donation-btn py-2 px-3 rounded-xl bg-surface-container font-label-md text-label-md text-on-surface hover:bg-secondary-fixed/60 transition-colors text-center font-medium"
-									onclick="selectAmount(this, 1000)">HK$ 1,000</button>
-							</div>
-							<!-- Impact Context for Selected Amount -->
-							<div class="bg-surface-container-low rounded-xl p-3 text-on-surface-variant font-body-sm text-body-sm mb-space-lg flex items-center gap-2"
-								id="impact-description">
-								<span class="material-symbols-outlined text-primary text-[20px]">lightbulb</span>
-								<span class="">HK$ 500 可支持一位照顧者參加 4 次減壓藝術工作坊</span>
-							</div>
 							<div class="space-y-3">
-								<a class="w-full inline-flex items-center justify-center gap-2 border border-secondary/50 text-secondary hover:bg-secondary-fixed/60 font-label-lg text-label-lg font-medium py-3 px-6 rounded-full transition-colors"
-									href="#">
-									<span class="material-symbols-outlined text-[20px]">credit_card</span>
-									<span class="">以信用卡或轉數快 (FPS) 支持</span>
+								<a class="w-full inline-flex items-center justify-center gap-2 bg-secondary-fixed text-on-secondary-fixed-variant hover:bg-secondary-fixed/80 font-label-lg text-label-lg font-medium py-3 px-6 rounded-full transition-colors"
+									href="https://google.com" target="_blank" rel="noopener">
+									<span class="material-symbols-outlined text-[20px]">volunteer_activism</span>
+									<span class="">立即捐款</span>
 								</a>
 								<div class="text-center font-label-sm text-label-sm text-on-surface-variant">
 									<span class="">或聯絡捐款熱線：(852) 2529 1261</span>
@@ -678,25 +660,6 @@
       `;
 					wall.prepend(note);
 					input.value = '';
-				}
-
-				// Donation Amount Switcher
-				function selectAmount(button, amount) {
-					document.querySelectorAll('.donation-btn').forEach(btn => {
-						btn.classList.remove('bg-secondary-fixed', 'text-on-secondary-fixed-variant');
-						btn.classList.add('bg-surface-container', 'text-on-surface');
-					});
-					button.classList.remove('bg-surface-container', 'text-on-surface');
-					button.classList.add('bg-secondary-fixed', 'text-on-secondary-fixed-variant');
-
-					const desc = document.getElementById('impact-description');
-					if (amount === 300) {
-						desc.innerHTML = '<span class="material-symbols-outlined text-primary text-[20px]">lightbulb</span><span>HK$ 300 可為 1 位復元人士提供兩次專業情緒電話輔導</span>';
-					} else if (amount === 500) {
-						desc.innerHTML = '<span class="material-symbols-outlined text-primary text-[20px]">lightbulb</span><span>HK$ 500 可支持一位照顧者參加 4 次減壓藝術工作坊</span>';
-					} else {
-						desc.innerHTML = '<span class="material-symbols-outlined text-primary text-[20px]">lightbulb</span><span>HK$ 1,000 可資助弱勢家庭復元者 1 個月的社區生活適應活動器材</span>';
-					}
 				}
 			</script>
 		</div>
