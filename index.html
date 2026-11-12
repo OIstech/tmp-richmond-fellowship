@@ -1,583 +1,659 @@
-<!DOCTYPE html><html lang="zh-HK"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&amp;family=Noto+Serif:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-error-container":"#93000a","on-tertiary-fixed-variant":"#164c60","background":"#faf7f0","on-secondary-fixed-variant":"#673d00","surface-bright":"#faf7f0","surface-container":"#ece7db","secondary-container":"#ffbc70","on-primary-fixed-variant":"#354f33","on-tertiary":"#ffffff","inverse-on-surface":"#f1ede3","secondary-fixed-dim":"#fcb96d","surface-container-lowest":"#fffdf8","surface":"#faf7f0","on-secondary-container":"#794a02","on-surface-variant":"#4a473d","surface-variant":"#dfd9cb","primary-fixed":"#d3e8c4","tertiary-container":"#2c5e72","tertiary-fixed-dim":"#9dcde5","on-background":"#1d1b15","surface-container-low":"#f3efe5","on-surface":"#1d1b15","error-container":"#ffdad6","on-tertiary-fixed":"#001f2a","outline-variant":"#cbc5b6","secondary":"#85530e","on-primary":"#ffffff","tertiary":"#0d465a","primary":"#2f4a2e","primary-fixed-dim":"#b7cca9","on-primary-container":"#bfd4b0","inverse-primary":"#b7cca9","inverse-surface":"#33302a","surface-tint":"#4d6848","error":"#ba1a1a","tertiary-fixed":"#bde9ff","surface-container-high":"#e5e0d3","on-primary-fixed":"#01210d","surface-container-highest":"#dfd9cb","on-error":"#ffffff","primary-container":"#476343","on-secondary":"#ffffff","surface-dim":"#d9d3c5","on-tertiary-container":"#a5d6ed","secondary-fixed":"#ffddba","outline":"#7a766a","on-secondary-fixed":"#2b1700"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-2xl":"4rem","gutter":"1.5rem","space-md":"1rem","space-xl":"2.5rem","margin-mobile":"1.25rem","space-sm":"0.5rem","margin":"3rem","gutter-mobile":"1rem","space-xs":"0.25rem","space-lg":"1.5rem"},fontFamily:{"headline-lg-mobile":["Noto Serif"],"quote-callout":["Noto Serif"],"label-md":["Noto Sans"],"headline-sm":["Noto Serif"],"label-sm":["Noto Sans"],"display-lg-mobile":["Noto Serif"],"display-lg":["Noto Serif"],"headline-md":["Noto Serif"],"label-lg":["Noto Sans"],"body-lg":["Noto Sans"],"body-sm":["Noto Sans"],"headline-lg":["Noto Serif"],"body-md":["Noto Sans"]},fontSize:{"headline-lg-mobile":["24px",{"lineHeight":"36px","fontWeight":"600"}],"quote-callout":["19px",{"lineHeight":"34px","letterSpacing":"0.015em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"18px","letterSpacing":"0.03em","fontWeight":"500"}],"headline-sm":["20px",{"lineHeight":"30px","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"500"}],"display-lg-mobile":["30px",{"lineHeight":"44px","letterSpacing":"0.01em","fontWeight":"600"}],"display-lg":["44px",{"lineHeight":"60px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"36px","fontWeight":"500"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"500"}],"body-lg":["17px",{"lineHeight":"30px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"46px","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"26px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_4px_24px_rgba(39,71,48,0.04)]"><div class="h-20 max-w-[1240px] mx-auto px-gutter flex items-center justify-between gap-space-md"><a class="flex items-center gap-space-sm group focus:outline-none" data-path="home" href="#"><div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-surface-container-lowest shadow-[0_2px_8px_rgba(39,71,48,0.12)] group-hover:bg-primary transition-colors"><span class="material-symbols-outlined text-[22px] text-on-primary">spa</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-semibold">利民會</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium tracking-wide uppercase">Richmond Fellowship of Hong Kong</span></div></a><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="bg-primary-container text-on-primary font-medium rounded-full px-space-md py-space-xs"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="recovery-journeys" href="#">復元歷程</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="carers-voices" href="#">照顧者心聲</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="companion-philosophy" href="#">同行理念</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-rfhk" href="#">認識利民會</a></nav><div class="flex items-center gap-space-md"><a class="inline-flex items-center gap-space-xs rounded-full bg-primary px-space-lg py-space-sm font-label-lg text-label-lg text-on-primary shadow-[0_4px_16px_rgba(39,71,48,0.16)] hover:bg-primary-container hover:text-on-primary transition-all" data-path="support-recovery" href="#"><span class="material-symbols-outlined text-[18px] text-on-primary">volunteer_activism</span><span class="">支持復元同行</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
-<!-- Top Hero Visual Banner Section -->
-<section class="relative w-full max-w-[1240px] mx-auto px-gutter pt-space-md pb-space-2xl overflow-hidden">
-<div class="relative w-full rounded-2xl overflow-hidden shadow-[0_12px_40px_-8px_rgba(39,71,48,0.12)] bg-surface-container-lowest">
-<!-- Watercolor Hero Banner Visual -->
-<div class="relative w-full aspect-[16/9] md:aspect-[21/10] max-h-[580px] overflow-hidden bg-surface-container-low">
-<img
-  alt="利民會復元故事插畫：慢慢走，也是在往前。兩位朋友並肩坐在向陽草坡俯瞰湖光山色，溫暖晨光照拂，旁邊附有拍立得風景照片與便利貼絮語。" 
-  class="w-full h-full object-cover object-center transform scale-[1.01] hover:scale-[1.02] transition-transform duration-700 ease-out" 
-  src="image.png"
->
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent pointer-events-none"></div>
-</div>
-<!-- Hero Subtext & Quick Action Bar -->
-<div class="relative p-space-lg md:p-space-xl bg-surface-container-lowest flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg">
-<div class="max-w-2xl">
-<div class="flex items-center gap-space-xs mb-space-xs">
-<span class="inline-flex items-center gap-1 rounded-full bg-primary-fixed/60 text-on-primary-fixed px-3 py-0.5 font-label-md text-label-md">
-<span class="material-symbols-outlined text-[14px]">eco</span>
-              社區精神健康同行平台
-            </span>
-<span class="text-on-surface-variant font-label-md text-label-md tracking-wider">RICHMOND FELLOWSHIP HK</span>
-</div>
-<p class="font-quote-callout text-quote-callout text-on-surface font-medium leading-relaxed">
-            每個人的復元步伐都不一樣。有時走得快，有時需要停一停。
-          </p>
-<p class="font-body-md text-body-md text-on-surface-variant mt-1">
-            在這裡，你看見不同的生命故事，聽見真摯的心跳聲。也許會發現，這條路上自己從不孤單。
-          </p>
-</div>
-<div class="flex flex-wrap items-center gap-space-sm">
-<a class="inline-flex items-center gap-space-xs rounded-full bg-primary px-space-lg py-space-sm font-label-lg text-label-lg text-on-primary shadow-[0_4px_16px_rgba(39,71,48,0.18)] hover:bg-primary-container transition-all" href="#recovery-narratives">
-<span class="">探索故事集</span>
-<span class="material-symbols-outlined text-[18px]">south</span>
-</a>
-<a class="inline-flex items-center gap-space-xs rounded-full bg-surface-container px-space-lg py-space-sm font-label-lg text-label-lg text-primary hover:bg-surface-container-high transition-all" href="#carer-voices">
-<span class="">照顧者心聲</span>
-<span class="material-symbols-outlined text-[18px]">family_restroom</span>
-</a>
-</div>
-</div>
-</div>
-<!-- 4 Core Pillars (Echoing the Illustration Bottom Badges) -->
-<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md mt-space-lg">
-<!-- Pillar 1: Hope -->
-<div class="group bg-surface-container-lowest/90 hover:bg-surface-container-lowest rounded-xl p-space-md shadow-[0_4px_20px_rgba(39,71,48,0.04)] transition-all hover:-translate-y-1">
-<div class="flex items-center gap-space-sm mb-space-xs">
-<div class="w-9 h-9 rounded-full bg-primary-fixed/50 flex items-center justify-center text-primary group-hover:bg-primary-fixed transition-colors">
-<span class="material-symbols-outlined text-[20px]">psychiatry</span>
-</div>
-<span class="font-headline-sm text-headline-sm text-primary font-medium">希望</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">改變，可以慢慢發生。給自己多一點耐心。</p>
-</div>
-<!-- Pillar 2: Companionship -->
-<div class="group bg-surface-container-lowest/90 hover:bg-surface-container-lowest rounded-xl p-space-md shadow-[0_4px_20px_rgba(39,71,48,0.04)] transition-all hover:-translate-y-1">
-<div class="flex items-center gap-space-sm mb-space-xs">
-<div class="w-9 h-9 rounded-full bg-secondary-fixed/50 flex items-center justify-center text-secondary group-hover:bg-secondary-fixed transition-colors">
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
-</div>
-<span class="font-headline-sm text-headline-sm text-secondary font-medium">同行</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">這段路，不用一個人走。有我們在身旁傾聽。</p>
-</div>
-<!-- Pillar 3: Growth -->
-<div class="group bg-surface-container-lowest/90 hover:bg-surface-container-lowest rounded-xl p-space-md shadow-[0_4px_20px_rgba(39,71,48,0.04)] transition-all hover:-translate-y-1">
-<div class="flex items-center gap-space-sm mb-space-xs">
-<div class="w-9 h-9 rounded-full bg-tertiary-fixed/50 flex items-center justify-center text-tertiary group-hover:bg-tertiary-fixed transition-colors">
-<span class="material-symbols-outlined text-[20px]">flight</span>
-</div>
-<span class="font-headline-sm text-headline-sm text-tertiary font-medium">成長</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">每一步都有它的意義，迷路也是風景的一部分。</p>
-</div>
-<!-- Pillar 4: Change -->
-<div class="group bg-surface-container-lowest/90 hover:bg-surface-container-lowest rounded-xl p-space-md shadow-[0_4px_20px_rgba(39,71,48,0.04)] transition-all hover:-translate-y-1">
-<div class="flex items-center gap-space-sm mb-space-xs">
-<div class="w-9 h-9 rounded-full bg-secondary-container/40 flex items-center justify-center text-on-secondary-container group-hover:bg-secondary-container transition-colors">
-<span class="material-symbols-outlined text-[20px]">local_florist</span>
-</div>
-<span class="font-headline-sm text-headline-sm text-on-secondary-container font-medium">改變</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">慢慢找回自己的生活節奏，重啟熱愛的事物。</p>
-</div>
-</div>
-</section>
-<!-- Quote Keepsake Callout Banner -->
-<section class="w-full bg-surface-container-low py-space-xl">
-<div class="max-w-[1020px] mx-auto px-gutter">
-<div class="relative bg-surface-container-lowest rounded-2xl p-space-lg md:p-space-xl shadow-[0_8px_30px_rgba(39,71,48,0.06)] flex flex-col md:flex-row items-center gap-space-lg">
-<!-- Washi Tape Effect Decoration -->
-<div class="absolute -top-3 left-10 w-24 h-6 bg-secondary-fixed/70 -rotate-2 rounded-sm backdrop-blur-sm pointer-events-none shadow-sm"></div>
-<div class="w-14 h-14 rounded-full bg-primary-fixed/40 flex-shrink-0 flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-[32px]">format_quote</span>
-</div>
-<div class="flex-1 text-center md:text-left">
-<p class="font-quote-callout text-quote-callout text-on-surface italic leading-relaxed">
-            「別人的康復像爬山，我的康復像散步。停下來看一朵花、聽一陣風，也是在好好生活。」
-          </p>
-<div class="mt-2 flex items-center justify-center md:justify-start gap-2 text-on-surface-variant font-label-md text-label-md">
-<span class="w-5 h-[1.5px] bg-primary/40 inline-block"></span>
-<span class="">利民會 日間社區精神健康服務復元學員・阿澄</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Platform Intro (故事讓理解發生) -->
-<section class="w-full bg-surface-container-lowest border-y border-outline-variant/40 py-space-2xl relative overflow-hidden">
-	<!-- Soft decorative blobs -->
-	<div class="absolute -top-16 -left-16 w-64 h-64 rounded-full bg-primary-fixed/30 blur-3xl pointer-events-none"></div>
-	<div class="absolute -bottom-20 -right-10 w-72 h-72 rounded-full bg-secondary-fixed/30 blur-3xl pointer-events-none"></div>
-	<div class="relative max-w-[1240px] mx-auto px-gutter">
-		<div class="max-w-2xl mx-auto text-center">
-			<div class="w-12 h-12 rounded-full bg-primary-fixed/60 mx-auto flex items-center justify-center text-primary mb-space-sm">
-				<span class="material-symbols-outlined text-[24px]">auto_stories</span>
-			</div>
-			<h2 class="font-headline-lg text-headline-lg text-primary">故事讓理解發生</h2>
-			<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">
-			每個復元歷程都不一樣。這個平台集合不同形式的文字、圖片、錄音及影片故事，讓服務使用者、照顧者與社區彼此看見，建立理解與連結。
-			</p>
-			<!-- Story format chips -->
-			<div class="flex flex-wrap items-center justify-center gap-space-xs mt-space-lg">
-				<span class="inline-flex items-center gap-1 rounded-full bg-surface-container px-3 py-1 text-on-surface-variant font-label-sm text-label-sm">
-					<span class="material-symbols-outlined text-[14px]">edit_note</span>文字
-				</span>
-				<span class="inline-flex items-center gap-1 rounded-full bg-surface-container px-3 py-1 text-on-surface-variant font-label-sm text-label-sm">
-					<span class="material-symbols-outlined text-[14px]">photo_camera</span>圖片
-				</span>
-				<span class="inline-flex items-center gap-1 rounded-full bg-surface-container px-3 py-1 text-on-surface-variant font-label-sm text-label-sm">
-					<span class="material-symbols-outlined text-[14px]">headphones</span>錄音
-				</span>
-				<span class="inline-flex items-center gap-1 rounded-full bg-surface-container px-3 py-1 text-on-surface-variant font-label-sm text-label-sm">
-					<span class="material-symbols-outlined text-[14px]">videocam</span>影片
-				</span>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- Featured Recovery Journeys (復元故事集) -->
-<section class="w-full max-w-[1240px] mx-auto px-gutter py-space-2xl" id="recovery-narratives">
-<!-- Section Header -->
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-sm">
-	<div>
-		<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-widest font-semibold mb-1">
-			<span class="w-2 h-2 rounded-full bg-primary"></span>
-			RECOVERY JOURNEYS
-		</div>
-		<h2 class="font-headline-lg text-headline-lg text-primary">復元故事</h2>
-		<p class="font-body-md text-body-md text-on-surface-variant  mt-1">
-		康復不是回到原點，而是在接納中長出新的韌性。細讀學員在晨光與微風中重新踏出的足跡。
-		</p>
-	</div>
-	<a class="inline-flex items-center gap-1 text-primary hover:text-on-surface font-label-lg text-label-lg" href="#">
-		          查看所有 <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-	</a>
-</div>
-<!-- Editorial Story Cards Grid -->
-<div class="grid grid-col-1 md:grid-cols-3 gap-space-lg">
-	<!-- Story Card 1 -->
-	<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_24px_rgba(39,71,48,0.06)] hover:shadow-[0_12px_32px_rgba(39,71,48,0.12)] transition-all duration-300 flex flex-col">
-		<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container">
-			<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Gentle soft morning light streaming through lush green foliage onto a wooden tabletop with a warm cup of herbal tea and a vintage camera, watercolor aesthetic, restorative calm tones of olive green, sage, and pale amber." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdooew8odalxxYSwmCUdo5zOHIstwlZ5KggchD-GbU4uP8uV-5ze03V93qn6ct9L8JNL-OykGw2kFqmC4F1FU1wCpa2Ci3qseinlkTP2ENgseIZU0u5_80njRO4-BkXpeuriAPW6pMrz1C_o4yAfS4OK-ADjsGr6I_RHKQ1Rc6PDU7Qi_Y2GnzmkWKmihGGyQDNv7Gq8eo4rQyTwYdj2hbaMPa2G90gQqqduDZDFbcHSoaQauh0ZDS">
-			<div class="absolute top-3 left-3">
-				<span class="inline-flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full text-primary font-label-sm text-label-sm shadow-sm">
-					<span class="material-symbols-outlined text-[14px]">photo_camera</span>
-					文字與攝影
-				</span>
-			</div>
-		</div>
-		<div class="p-space-lg flex-1 flex flex-col justify-between">
-			<div>
-				<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mb-2">
-					<span class="font-medium text-primary">思晴</span>
-					<span class="">•</span>
-					<span class="">走出抑鬱症第四年</span>
-				</div>
-				<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-2">
-					用鏡頭記錄日常的轉變：在微風與落葉裡找回自己
-				</h3>
-				<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
-				曾經好幾個月連拉開窗簾的力氣都沒有。直到利民會社工送給我一本空白速寫本，我開始走出門拍下街角的野花。相機不是為了拍得漂亮，而是提醒我：我還能看見美。
-				</p>
-			</div>
-			<div class="pt-space-md mt-space-md flex items-center justify-between">
-				<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
-					<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-medium group-hover:translate-x-1 transition-transform" href="#">
-						閱讀全文 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-					</a>
-			</div>
-		</div>
-	</article>
-	<!-- Story Card 2 -->
-	<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_24px_rgba(39,71,48,0.06)] hover:shadow-[0_12px_32px_rgba(39,71,48,0.12)] transition-all duration-300 flex flex-col">
-		<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container">
-			<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A peaceful sunlit sunroom with potted plants, gentle watercolor painting on an easel, soft morning mist outside the glass window, gentle sage and sky blue atmosphere, conveying healing and slow pace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr5o1y-Do68UXoLFHGSFgqNedWOMSUl777spdqu3WC_P4RbFEKtbBpuS9nepQDYUof1TqEH9zzTK5giNQ2vyGc2K4kYmX_KIi1bYK0xX83_QU5_R1EctdbfUzgUFxCsxgueOR6DoT90b71CrP0Sw3zG_zfysM5lhogplECRyy0XDA4vQQmMEFWzO8GokSgXmAFEkxYRHikfqxK2mScJEfK0vkEbcyn3f00JvAJqkUQUMDgpq3Q-DN7">
-			<div class="absolute top-3 left-3">
-				<span class="inline-flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full text-secondary font-label-sm text-label-sm shadow-sm">
-					<span class="material-symbols-outlined text-[14px]">psychology</span>
-					文字
-				</span>
-			</div>
-		</div>
-		<div class="p-space-lg flex-1 flex flex-col justify-between">
-			<div>
-				<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mb-2">
-					<span class="font-medium text-secondary">小柔</span>
-					<span class="">•</span>
-					<span class="">精神分裂症復元歷程</span>
-				</div>
-				<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-2">
-					一點點光，照亮回家的路：在互助小組中卸下防備
-				</h3>
-				<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
-				幻聽最嚴重時，世界像一個充滿刺耳噪音的鐵盒。利民會的同路人支援小組沒有人質疑我的恐懼，大家只是安靜地泡好花茶遞給我。那是我五年來第一次感覺被完整理解。
-				</p>
-			</div>
-			<div class="pt-space-md mt-space-md flex items-center justify-between">
-				<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-medium group-hover:translate-x-1 transition-transform" href="#">
-					閱讀全文 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-				</a>
-			</div>
-		</div>
-	</article>
-	<!-- Story Card 3 (Audio Podcast Experience) -->
-	<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_24px_rgba(39,71,48,0.06)] hover:shadow-[0_12px_32px_rgba(39,71,48,0.12)] transition-all duration-300 flex flex-col">
-		<div class="relative aspect-[4/3] w-full overflow-hidden bg-tertiary-container/10 p-space-md flex flex-col justify-between">
-			<div class="flex items-center justify-between z-10">
-				<span class="inline-flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full text-tertiary font-label-sm text-label-sm shadow-sm">
-					<span class="material-symbols-outlined text-[14px]">headphones</span>
-					語音
-				</span>
-				<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-fixed/60 px-2 py-0.5 rounded-full">EP. 14</span>
-			</div>
-			<!-- Stylized Audio Wave Visual -->
-			<div class="flex items-end justify-center gap-1.5 h-20 my-auto py-2">
-				<div class="w-1.5 bg-tertiary/40 rounded-full h-8 animate-pulse"></div>
-				<div class="w-1.5 bg-tertiary/70 rounded-full h-14 animate-pulse" style="animation-delay: 150ms;"></div>
-				<div class="w-1.5 bg-tertiary rounded-full h-16 animate-pulse" style="animation-delay: 300ms;"></div>
-				<div class="w-1.5 bg-tertiary/90 rounded-full h-12 animate-pulse" style="animation-delay: 200ms;"></div>
-				<div class="w-1.5 bg-tertiary/60 rounded-full h-6 animate-pulse" style="animation-delay: 450ms;"></div>
-				<div class="w-1.5 bg-tertiary/80 rounded-full h-10 animate-pulse" style="animation-delay: 100ms;"></div>
-				<div class="w-1.5 bg-tertiary rounded-full h-14 animate-pulse" style="animation-delay: 350ms;"></div>
-				<div class="w-1.5 bg-tertiary/50 rounded-full h-7 animate-pulse" style="animation-delay: 250ms;"></div>
-			</div>
-			<!-- Audio Player Floating Bar -->
-			<div class="bg-surface-container-lowest/95 backdrop-blur-md rounded-xl p-2.5 flex items-center justify-between gap-2 shadow-sm z-10">
-				<button class="w-9 h-9 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center hover:bg-tertiary-container transition-colors" id="podcast-play-btn" onclick="toggleAudio(this)">
-					<span class="material-symbols-outlined text-[20px]" id="play-icon">play_arrow</span>
-				</button>
-				<div class="flex-1 min-w-0">
-					<div class="h-1.5 bg-surface-container-high rounded-full overflow-hidden">
-						<div class="h-full bg-tertiary rounded-full w-1/3 transition-all duration-300" id="audio-progress"></div>
-					</div>
-					<div class="flex justify-between text-[10px] text-on-surface-variant mt-1 font-label-sm">
-						<span id="audio-time" class="">04:12</span>
-						<span class="">12:45</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="p-space-lg flex-1 flex flex-col justify-between">
-			<div>
-				<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mb-2">
-					<span class="font-medium text-tertiary">家明</span>
-					<span class="">•</span>
-					<span class="">朋輩支援專員 (Peer Specialist)</span>
-				</div>
-				<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-2">
-					同行的聲音：從求助者轉化為傾聽者的心路歷程
-				</h3>
-				<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
-				用我經歷過的痛，去接住另一個正在下墜的人。復元不是沒有傷疤，而是能帶著傷疤，溫柔地對待世界。
-				</p>
-			</div>
-			<div class="pt-space-md mt-space-md flex items-center justify-between">
-				<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-medium group-hover:translate-x-1 transition-transform" href="#">
-					閱讀全文 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-				</a>
-			</div>
-		</div>
-	</article>
-</div>
-</section>
-<!-- Carers Dialogue (同行的力量・照顧者故事與喘息天地) -->
-<section class="w-full max-w-[1240px] mx-auto px-gutter pb-space-2xl" id="carer-voices">
-<!-- Section Header -->
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-sm">
-	<div>
-		<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm uppercase tracking-widest font-semibold mb-1">
-			<span class="w-2 h-2 rounded-full bg-secondary"></span>
-			CARER VOICES
-		</div>
-		<h2 class="font-headline-lg text-headline-lg text-primary">照顧者故事</h2>
-		<p class="font-body-md text-body-md text-on-surface-variant mt-1">
-		照顧一個人之前，也需要先照顧自己。聽聽陪伴者在日常裡的掙扎、喘息與被看見的時刻。
-		</p>
-	</div>
-	<a class="inline-flex items-center gap-1 text-primary hover:text-on-surface font-label-lg text-label-lg" href="#">
-		          查看所有 <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-	</a>
-</div>
-<!-- Carer Story Cards Grid -->
-<div class="grid grid-col-1 md:grid-cols-3 gap-space-lg">
-	<!-- Carer Card 1 -->
-	<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_24px_rgba(39,71,48,0.06)] hover:shadow-[0_12px_32px_rgba(39,71,48,0.12)] transition-all duration-300 flex flex-col">
-		<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container">
-			<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A quiet kitchen table by a window in soft morning light, a cup of tea and an open notebook, watercolor tones of sage and pale amber, conveying a carer's moment of rest." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdooew8odalxxYSwmCUdo5zOHIstwlZ5KggchD-GbU4uP8uV-5ze03V93qn6ct9L8JNL-OykGw2kFqmC4F1FU1wCpa2Ci3qseinlkTP2ENgseIZU0u5_80njRO4-BkXpeuriAPW6pMrz1C_o4yAfS4OK-ADjsGr6I_RHKQ1Rc6PDU7Qi_Y2GnzmkWKmihGGyQDNv7Gq8eo4rQyTwYdj2hbaMPa2G90gQqqduDZDFbcHSoaQauh0ZDS">
-			<div class="absolute top-3 left-3">
-				<span class="inline-flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full text-primary font-label-sm text-label-sm shadow-sm">
-					<span class="material-symbols-outlined text-[14px]">self_care</span>
-					自我照顧
-				</span>
-			</div>
-		</div>
-		<div class="p-space-lg flex-1 flex flex-col justify-between">
-			<div>
-				<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mb-2">
-					<span class="font-medium text-primary">美玲</span>
-					<span class="">•</span>
-					<span class="">照顧者</span>
-				</div>
-				<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-2">
-					美玲：陪伴者的日常
-				</h3>
-				<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
-				家人患病之後，我先學懂照顧一個人之前，也需要照顧自己。
-				</p>
-			</div>
-			<div class="pt-space-md mt-space-md flex items-center justify-between">
-				<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-medium group-hover:translate-x-1 transition-transform" href="#">
-					閱讀全文 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-				</a>
-			</div>
-		</div>
-	</article>
-	<!-- Carer Card 2 -->
-	<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_24px_rgba(39,71,48,0.06)] hover:shadow-[0_12px_32px_rgba(39,71,48,0.12)] transition-all duration-300 flex flex-col">
-		<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container">
-			<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A sunlit room with family photographs on a wooden shelf and a vintage camera, soft watercolor palette of sage green and sky blue, conveying warmth and everyday family life." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr5o1y-Do68UXoLFHGSFgqNedWOMSUl777spdqu3WC_P4RbFEKtbBpuS9nepQDYUof1TqEH9zzTK5giNQ2vyGc2K4kYmX_KIi1bYK0xX83_QU5_R1EctdbfUzgUFxCsxgueOR6DoT90b71CrP0Sw3zG_zfysM5lhogplECRyy0XDA4vQQmMEFWzO8GokSgXmAFEkxYRHikfqxK2mScJEfK0vkEbcyn3f00JvAJqkUQUMDgpq3Q-DN7">
-			<div class="absolute top-3 left-3">
-				<span class="inline-flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full text-secondary font-label-sm text-label-sm shadow-sm">
-					<span class="material-symbols-outlined text-[14px]">photo_camera</span>
-					家庭與突破
-				</span>
-			</div>
-		</div>
-		<div class="p-space-lg flex-1 flex flex-col justify-between">
-			<div>
-				<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mb-2">
-					<span class="font-medium text-secondary">家明</span>
-					<span class="">•</span>
-					<span class="">照顧者</span>
-				</div>
-				<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-2">
-					家明：按下快門的勇氣
-				</h3>
-				<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
-				相入面不只是病，還有笑容，也有一直被忽略的日常。
-				</p>
-			</div>
-			<div class="pt-space-md mt-space-md flex items-center justify-between">
-				<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-medium group-hover:translate-x-1 transition-transform" href="#">
-					閱讀全文 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-				</a>
-			</div>
-		</div>
-	</article>
-	<!-- Carer Card 3 -->
-	<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_24px_rgba(39,71,48,0.06)] hover:shadow-[0_12px_32px_rgba(39,71,48,0.12)] transition-all duration-300 flex flex-col">
-		<div class="relative aspect-[4/3] w-full overflow-hidden bg-tertiary-container/10 flex items-center justify-center">
-			<div class="absolute top-3 left-3 z-10">
-				<span class="inline-flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full text-tertiary font-label-sm text-label-sm shadow-sm">
-					<span class="material-symbols-outlined text-[14px]">groups</span>
-					社群與支援
-				</span>
-			</div>
-			<!-- Group Visual -->
-			<div class="flex items-center -space-x-4 group-hover:-space-x-2 transition-all duration-500">
-				<div class="w-16 h-16 rounded-full bg-primary-fixed/70 flex items-center justify-center text-primary ring-4 ring-surface-container-lowest">
-					<span class="material-symbols-outlined text-[28px]">person</span>
-				</div>
-				<div class="w-20 h-20 rounded-full bg-secondary-fixed/70 flex items-center justify-center text-secondary ring-4 ring-surface-container-lowest z-10">
-					<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
-				</div>
-				<div class="w-16 h-16 rounded-full bg-tertiary-fixed/70 flex items-center justify-center text-tertiary ring-4 ring-surface-container-lowest">
-					<span class="material-symbols-outlined text-[28px]">person</span>
-				</div>
-			</div>
-		</div>
-		<div class="p-space-lg flex-1 flex flex-col justify-between">
-			<div>
-				<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mb-2">
-					<span class="font-medium text-tertiary">同行小組</span>
-					<span class="">•</span>
-					<span class="">三位照顧者</span>
-				</div>
-				<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-2">
-					同行小組：我們並不孤單
-				</h3>
-				<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
-				三位照顧者分享如何在同行小組中找到資訊、空間與支持。
-				</p>
-			</div>
-			<div class="pt-space-md mt-space-md flex items-center justify-between">
-				<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-medium group-hover:translate-x-1 transition-transform" href="#">
-					閱讀全文 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-				</a>
-			</div>
-		</div>
-	</article>
-</div>
-</section>
-<!-- Interactive Empathy Heart Wall (留下你的同理祝福) -->
-<section class="w-full bg-surface-container-low py-space-2xl">
-	<div class="max-w-[1240px] mx-auto px-gutter">
-	<div class="bg-surface-container-lowest rounded-3xl p-space-lg md:p-space-xl shadow-[0_8px_32px_rgba(39,71,48,0.05)]">
-		<div class="text-center max-w-xl mx-auto mb-space-lg">
-			<div class="w-10 h-10 rounded-full bg-secondary-fixed/50 mx-auto flex items-center justify-center text-secondary mb-2">
-				<span class="material-symbols-outlined text-[22px]">favorite</span>
-			</div>
-			<h2 class="font-headline-lg text-headline-lg text-primary">同路人寄語牆</h2>
-			<p class="font-body-md text-body-md text-on-surface-variant mt-1">
-			一句溫柔的肯定，可能成為某個人今天堅持下去的全部理由。留下你的暖心話語。
-			</p>
-		</div>
-		<!-- Quick Message Input Form -->
-		<div class="max-w-xl mx-auto mb-space-xl">
-		</div>
-		<!-- Sticky Notes Masonry Wall -->
-		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-space-md" id="wishes-wall">
-			<!-- Note 1 -->
-			<div class="relative bg-surface-container p-space-md rounded-xl transform -rotate-1 shadow-sm transition-all hover:rotate-0 hover:shadow-md">
-				<div class="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-secondary-fixed/60 rounded-sm"></div>
-				<p class="font-quote-callout text-[15px] leading-relaxed text-on-surface mt-2">
-				「今天曬到了溫暖的太陽，心情也放晴了一點點。你也一樣，慢慢走，沒關係的。」
-				</p>
-				<div class="mt-space-sm pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
-					<span class="">葵芳 義工 阿雯</span>
-				</div>
-			</div>
-			<!-- Note 2 -->
-			<div class="relative bg-surface-container-high p-space-md rounded-xl transform rotate-1 shadow-sm transition-all hover:rotate-0 hover:shadow-md">
-				<div class="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-primary-fixed/60 rounded-sm"></div>
-				<p class="font-quote-callout text-[15px] leading-relaxed text-on-surface mt-2">
-				「致全天下的照顧者：你們已經做得非常棒了，今天請記得獎勵自己一個甜品！」
-				</p>
-				<div class="mt-space-sm pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
-					<span class="">東區同路人家屬</span>
-				</div>
-			</div>
-			<!-- Note 3 -->
-			<div class="relative bg-surface-container p-space-md rounded-xl transform -rotate-1.5 shadow-sm transition-all hover:rotate-0 hover:shadow-md">
-				<div class="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-secondary-container/60 rounded-sm"></div>
-				<p class="font-quote-callout text-[15px] leading-relaxed text-on-surface mt-2">
-				「給正感到疲憊的朋友：允許自己今天只呼吸、只發呆，這本身就是很了不起的努力。」
-				</p>
-				<div class="mt-space-sm pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
-					<span class="">利民會臨床心理學家</span>
-				</div>
-			</div>
-			<!-- Note 4 -->
-			<div class="relative bg-surface-container-high p-space-md rounded-xl transform rotate-2 shadow-sm transition-all hover:rotate-0 hover:shadow-md">
-				<div class="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-tertiary-fixed/60 rounded-sm"></div>
-				<p class="font-quote-callout text-[15px] leading-relaxed text-on-surface mt-2">
-				「原來，一小步也是一步。感謝利民會的故事，讓我今天終於有勇氣打開大門散步。」
-				</p>
-				<div class="mt-space-sm pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
-					<span class="">沙田 復元路上的小鳥</span>
-				</div>
-			</div>
-		</div>
-	</div>
-	</div>
-</section>
-<!-- Community Impact & Donation CTA (社區同行與支持) -->
-<section class="w-full bg-primary text-on-primary py-space-2xl my-space-lg relative overflow-hidden my-0">
-	<div class="max-w-[1240px] mx-auto px-gutter relative z-10">
-		<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
-			<!-- Impact Highlights -->
-			<div class="lg:col-span-7">
-				<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm mb-space-sm">
-					<span class="material-symbols-outlined text-[16px]">volunteer_activism</span>
-					守護香港社區心理健康
-				</span>
-				<h2 class="font-headline-lg text-headline-lg text-on-primary mb-space-sm leading-tight">
-					讓一份及時的支持，化為另一段復元生命的溫暖起點。
-				</h2>
-				<p class="font-body-md text-body-md text-on-primary/80 max-w-xl mb-space-lg">
-				利民會致力於讓精神復元人士擁有平等尊嚴的社區生活。您的每一筆捐助，都將直接支持照顧者喘息計劃、日間訓練小組以及 24 小時熱線服務。
-				</p>
-				<div class="grid grid-cols-3 gap-space-md pt-space-xs border-t-0">
-					<div class="bg-primary-container/60 rounded-xl p-3.5">
-						<span class="font-display-lg text-[32px] md:text-[38px] leading-none font-bold text-secondary-container">12,000+</span>
-						<p class="font-body-sm text-body-sm text-on-primary/80 mt-1">每年受惠復元及照顧者人次</p>
-					</div>
-					<div class="bg-primary-container/60 rounded-xl p-3.5">
-						<span class="font-display-lg text-[32px] md:text-[38px] leading-none font-bold text-secondary-container">24/7</span>
-						<p class="font-body-sm text-body-sm text-on-primary/80 mt-1">全年無休電話支援守候</p>
-					</div>
-					<div class="bg-primary-container/60 rounded-xl p-3.5">
-						<span class="font-display-lg text-[32px] md:text-[38px] leading-none font-bold text-secondary-container">100%</span>
-						<p class="font-body-sm text-body-sm text-on-primary/80 mt-1">全心傾聽、接納與尊重</p>
-					</div>
-				</div>
-			</div>
-			<!-- Quick Donation Action Card -->
-			<div class="lg:col-span-5 bg-surface-container-lowest text-on-surface rounded-3xl p-space-lg md:p-space-xl shadow-xl">
-				<h3 class="font-headline-sm text-headline-sm text-primary mb-1">捐助復元同行夥伴</h3>
-				<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
-				港幣 $100 以上捐款憑收據可申請香港稅務寬免。
-				</p>
-				<!-- Amount Selector Buttons -->
-				<div class="grid grid-cols-3 gap-2 mb-space-md">
-					<button class="donation-btn py-2 px-3 rounded-xl bg-surface-container font-label-md text-label-md text-on-surface hover:bg-primary-fixed transition-colors text-center font-medium" onclick="selectAmount(this, 300)">HK$ 300</button>
-					<button class="donation-btn py-2 px-3 rounded-xl bg-primary text-on-primary font-label-md text-label-md transition-colors text-center font-medium" onclick="selectAmount(this, 500)">HK$ 500</button>
-					<button class="donation-btn py-2 px-3 rounded-xl bg-surface-container font-label-md text-label-md text-on-surface hover:bg-primary-fixed transition-colors text-center font-medium" onclick="selectAmount(this, 1000)">HK$ 1,000</button>
-				</div>
-				<!-- Impact Context for Selected Amount -->
-				<div class="bg-surface-container-low rounded-xl p-3 text-on-surface-variant font-body-sm text-body-sm mb-space-lg flex items-center gap-2" id="impact-description">
-					<span class="material-symbols-outlined text-primary text-[20px]">lightbulb</span>
-					<span class="">HK$ 500 可支持一位照顧者參加 4 次減壓藝術工作坊</span>
-				</div>
-				<div class="space-y-3">
-					<a class="w-full inline-flex items-center justify-center gap-2 bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed font-label-lg text-label-lg font-semibold py-3.5 px-6 rounded-full transition-all shadow-md" href="#">
-						<span class="material-symbols-outlined text-[20px]">credit_card</span>
-						<span class="">以信用卡或轉數快 (FPS) 支持</span>
-					</a>
-					<div class="text-center font-label-sm text-label-sm text-on-surface-variant">
-						<span class="">或聯絡捐款熱線：(852) 2529 1261</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- Interactive JavaScript for Client Micro-interactions -->
-<script>
-	// Copy quote button feedback
-	function copyQuote(btn) {
-		const text = "「別人的康復像爬山，我的康復像散步。停下來看一朵花，也是在好好生活。」— 利民會復元學員";
-		navigator.clipboard.writeText(text).then(() => {
-			const original = btn.innerHTML;
-			btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span><span>已收藏金句</span>';
-			setTimeout(() => {
-				btn.innerHTML = original;
-			}, 2000);
-		});
-	}
+<!DOCTYPE html>
+<html lang="zh-HK">
 
-	// Audio Play / Pause toggle animation
-	let isPlaying = false;
-	function toggleAudio(btn) {
-		isPlaying = !isPlaying;
-		const icon = document.getElementById('play-icon');
-		const progress = document.getElementById('audio-progress');
-		const time = document.getElementById('audio-time');
-		if (isPlaying) {
-			icon.innerText = 'pause';
-			progress.style.width = '65%';
-			time.innerText = '08:15';
-		} else {
-			icon.innerText = 'play_arrow';
-			progress.style.width = '33%';
-			time.innerText = '04:12';
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&amp;family=Noto+Serif:wght@400;500;600;700&amp;display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+		rel="stylesheet">
+	<style>
+		@layer base {
+
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				overscroll-behavior: none;
+			}
+
+			main>:first-child {
+				margin-top: 0 !important;
+			}
+
+			main>:last-child {
+				margin-bottom: 0 !important;
+			}
 		}
-	}
 
-	// Wall of warmth: add user wish dynamically
-	function postWarmth(e) {
-		e.preventDefault();
-		const input = document.getElementById('message-input');
-		const text = input.value.trim();
-		if (!text) return;
+		::-webkit-scrollbar {
+			display: none;
+		}
+	</style>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script
+		id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"on-error-container": "#93000a", "on-tertiary-fixed-variant": "#164c60", "background": "#faf7f0", "on-secondary-fixed-variant": "#673d00", "surface-bright": "#faf7f0", "surface-container": "#ece7db", "secondary-container": "#ffbc70", "on-primary-fixed-variant": "#354f33", "on-tertiary": "#ffffff", "inverse-on-surface": "#f1ede3", "secondary-fixed-dim": "#fcb96d", "surface-container-lowest": "#fffdf8", "surface": "#faf7f0", "on-secondary-container": "#794a02", "on-surface-variant": "#4a473d", "surface-variant": "#dfd9cb", "primary-fixed": "#d3e8c4", "tertiary-container": "#2c5e72", "tertiary-fixed-dim": "#9dcde5", "on-background": "#1d1b15", "surface-container-low": "#f3efe5", "on-surface": "#1d1b15", "error-container": "#ffdad6", "on-tertiary-fixed": "#001f2a", "outline-variant": "#cbc5b6", "secondary": "#85530e", "on-primary": "#ffffff", "tertiary": "#0d465a", "primary": "#2f4a2e", "primary-fixed-dim": "#b7cca9", "on-primary-container": "#bfd4b0", "inverse-primary": "#b7cca9", "inverse-surface": "#33302a", "surface-tint": "#4d6848", "error": "#ba1a1a", "tertiary-fixed": "#bde9ff", "surface-container-high": "#e5e0d3", "on-primary-fixed": "#01210d", "surface-container-highest": "#dfd9cb", "on-error": "#ffffff", "primary-container": "#476343", "on-secondary": "#ffffff", "surface-dim": "#d9d3c5", "on-tertiary-container": "#a5d6ed", "secondary-fixed": "#ffddba", "outline": "#7a766a", "on-secondary-fixed": "#2b1700"}, borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"}, spacing: {"space-2xl": "4rem", "gutter": "1.5rem", "space-md": "1rem", "space-xl": "2.5rem", "margin-mobile": "1.25rem", "space-sm": "0.5rem", "margin": "3rem", "gutter-mobile": "1rem", "space-xs": "0.25rem", "space-lg": "1.5rem"}, fontFamily: {"headline-lg-mobile": ["Noto Serif"], "quote-callout": ["Noto Serif"], "label-md": ["Noto Sans"], "headline-sm": ["Noto Serif"], "label-sm": ["Noto Sans"], "display-lg-mobile": ["Noto Serif"], "display-lg": ["Noto Serif"], "headline-md": ["Noto Serif"], "label-lg": ["Noto Sans"], "body-lg": ["Noto Sans"], "body-sm": ["Noto Sans"], "headline-lg": ["Noto Serif"], "body-md": ["Noto Sans"]}, fontSize: {"headline-lg-mobile": ["24px", {"lineHeight": "36px", "fontWeight": "600"}], "quote-callout": ["19px", {"lineHeight": "34px", "letterSpacing": "0.015em", "fontWeight": "400"}], "label-md": ["12px", {"lineHeight": "18px", "letterSpacing": "0.03em", "fontWeight": "500"}], "headline-sm": ["20px", {"lineHeight": "30px", "fontWeight": "500"}], "label-sm": ["11px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500"}], "display-lg-mobile": ["30px", {"lineHeight": "44px", "letterSpacing": "0.01em", "fontWeight": "600"}], "display-lg": ["44px", {"lineHeight": "60px", "letterSpacing": "0.02em", "fontWeight": "600"}], "headline-md": ["24px", {"lineHeight": "36px", "fontWeight": "500"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}], "body-lg": ["17px", {"lineHeight": "30px", "fontWeight": "400"}], "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}], "headline-lg": ["32px", {"lineHeight": "46px", "fontWeight": "600"}], "body-md": ["15px", {"lineHeight": "26px", "fontWeight": "400"}]}}}};</script>
+</head>
 
-		const wall = document.getElementById('wishes-wall');
-		const note = document.createElement('div');
-		note.className = 'relative bg-surface-container-high p-space-md rounded-xl transform rotate-1 shadow-md transition-all hover:rotate-0 hover:shadow-lg animate-fade-in';
-		note.innerHTML = `
+<body
+	class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+	<header
+		class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_4px_24px_rgba(39,71,48,0.04)]">
+		<div class="h-20 max-w-[1240px] mx-auto px-gutter flex items-center justify-between gap-space-md"><a
+				class="flex items-center gap-space-sm group focus:outline-none" data-path="home" href="#">
+				<div
+					class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-surface-container-lowest shadow-[0_2px_8px_rgba(39,71,48,0.12)] group-hover:bg-primary transition-colors">
+					<span class="material-symbols-outlined text-[22px] text-on-primary">spa</span></div>
+				<div class="flex flex-col"><span
+						class="font-headline-sm text-headline-sm text-primary tracking-tight font-semibold">利民會</span><span
+						class="font-label-sm text-label-sm text-on-surface-variant font-medium tracking-wide uppercase">Richmond
+						Fellowship of Hong Kong</span></div>
+			</a>
+			<nav class="hidden lg:flex items-center gap-space-lg"
+				data-active-classes="bg-primary-container text-on-primary font-medium rounded-full px-space-md py-space-xs">
+				<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors"
+					data-path="recovery-journeys" href="#">復元故事</a><a
+					class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors"
+					data-path="carers-voices" href="#">照顧者同行故事</a><a
+					class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors"
+					data-path="companion-philosophy" href="#">同路人寄語牆</a></nav>
+			<div class="flex items-center gap-space-md"><a
+					class="inline-flex items-center gap-space-xs rounded-full bg-primary px-space-lg py-space-sm font-label-lg text-label-lg text-on-primary shadow-[0_4px_16px_rgba(39,71,48,0.16)] hover:bg-primary-container hover:text-on-primary transition-all"
+					data-path="support-recovery" href="#"><span
+						class="material-symbols-outlined text-[18px] text-on-primary">volunteer_activism</span><span
+						class="">支持復元同行</span></a>
+			</div>
+		</div>
+	</header>
+	<main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]">
+		<div class="flex flex-col w-full">
+			<!-- Top Hero Visual Banner Section -->
+			<section class="relative w-full max-w-[1240px] mx-auto px-gutter pt-space-md overflow-hidden">
+				<div
+					class="relative w-full rounded-2xl overflow-hidden shadow-[0_12px_40px_-8px_rgba(39,71,48,0.12)] bg-surface-container-lowest">
+					<!-- Watercolor Hero Banner Visual -->
+					<div
+						class="relative w-full aspect-[16/9] md:aspect-[21/10] max-h-[580px] overflow-hidden bg-surface-container-low">
+						<img alt="利民會復元故事插畫：慢慢走，也是在往前。兩位朋友並肩坐在向陽草坡俯瞰湖光山色，溫暖晨光照拂，旁邊附有拍立得風景照片與便利貼絮語。"
+							class="w-full h-full object-cover object-center transform scale-[1.01] hover:scale-[1.02] transition-transform duration-700 ease-out"
+							src="image_2.png">
+						<div
+							class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent pointer-events-none">
+						</div>
+					</div>
+					<!-- Hero Subtext & Quick Action Bar -->
+					<div
+						class="relative p-space-lg md:p-space-xl bg-surface-container-lowest flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg">
+						<div class="max-w-2xl">
+							<div class="flex items-center gap-space-xs mb-space-xs">
+								<span
+									class="inline-flex items-center gap-1 rounded-full bg-primary-fixed/60 text-on-primary-fixed px-3 py-0.5 font-label-md text-label-md">
+									<span class="material-symbols-outlined text-[14px]">eco</span>
+									社區精神健康同行平台
+								</span>
+								<span
+									class="text-on-surface-variant font-label-md text-label-md tracking-wider">RICHMOND
+									FELLOWSHIP HK</span>
+							</div>
+							<p
+								class="font-quote-callout text-quote-callout text-on-surface font-medium leading-relaxed">
+								每個人的復元步伐都不一樣。有時走得快，有時需要停一停。
+							</p>
+							<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+								在這裡，你看見不同的生命故事，聽見真摯的心跳聲。也許會發現，這條路上自己從不孤單。
+							</p>
+						</div>
+						<div class="flex flex-wrap items-center gap-space-sm">
+							<a class="inline-flex items-center gap-space-xs rounded-full bg-primary px-space-lg py-space-sm font-label-lg text-label-lg text-on-primary shadow-[0_4px_16px_rgba(39,71,48,0.18)] hover:bg-primary-container transition-all"
+								href="#recovery-narratives">
+								<span class="">探索故事集</span>
+								<span class="material-symbols-outlined text-[18px]">south</span>
+							</a>
+							<a class="inline-flex items-center gap-space-xs rounded-full bg-surface-container px-space-lg py-space-sm font-label-lg text-label-lg text-primary hover:bg-surface-container-high transition-all"
+								href="#carer-voices">
+								<span class="">照顧者心聲</span>
+								<span class="material-symbols-outlined text-[18px]">family_restroom</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Quote Keepsake Callout Banner -->
+			<section class="w-full max-w-[1240px] mx-auto px-gutter py-space-2xl" id="recovery-narratives">
+				<!-- Section Header -->
+				<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-sm">
+					<div>
+						<h2 class="font-headline-lg text-headline-lg text-primary">復元故事</h2>
+						<p class="font-body-md text-body-md text-on-surface-variant  mt-1">
+							復元沒有一條指定的路,每個人都可以走出自己的步伐
+						</p>
+					</div>
+					<a class="inline-flex items-center gap-1 text-primary hover:text-on-surface font-label-lg text-label-lg"
+						href="#">
+						查看所有 <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+					</a>
+				</div>
+				<!-- Editorial Story Cards Grid -->
+				<div class="grid grid-col-1 md:grid-cols-3 gap-space-lg">
+					<!-- Story Card 1 -->
+					<article
+						class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_24px_rgba(39,71,48,0.06)] hover:shadow-[0_12px_32px_rgba(39,71,48,0.12)] transition-all duration-300 flex flex-col">
+						<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container">
+							<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+								data-alt="Gentle soft morning light streaming through lush green foliage onto a wooden tabletop with a warm cup of herbal tea and a vintage camera, watercolor aesthetic, restorative calm tones of olive green, sage, and pale amber."
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdooew8odalxxYSwmCUdo5zOHIstwlZ5KggchD-GbU4uP8uV-5ze03V93qn6ct9L8JNL-OykGw2kFqmC4F1FU1wCpa2Ci3qseinlkTP2ENgseIZU0u5_80njRO4-BkXpeuriAPW6pMrz1C_o4yAfS4OK-ADjsGr6I_RHKQ1Rc6PDU7Qi_Y2GnzmkWKmihGGyQDNv7Gq8eo4rQyTwYdj2hbaMPa2G90gQqqduDZDFbcHSoaQauh0ZDS">
+							<div class="absolute top-3 left-3">
+								<span
+									class="inline-flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full text-primary font-label-sm text-label-sm shadow-sm">
+									<span class="material-symbols-outlined text-[14px]">photo_camera</span>
+									文字與攝影
+								</span>
+							</div>
+						</div>
+						<div class="p-space-lg flex-1 flex flex-col justify-between">
+							<div>
+								<div
+									class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mb-2">
+									<span class="font-medium text-primary">思晴</span>
+									<span class="">•</span>
+									<span class="">走出抑鬱症第四年</span>
+								</div>
+								<h3
+									class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-2">
+									用鏡頭記錄日常的轉變：在微風與落葉裡找回自己
+								</h3>
+								<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+									曾經好幾個月連拉開窗簾的力氣都沒有。直到利民會社工送給我一本空白速寫本，我開始走出門拍下街角的野花。相機不是為了拍得漂亮，而是提醒我：我還能看見美。
+								</p>
+							</div>
+							<div class="pt-space-md mt-space-md flex items-center justify-between">
+								<span
+									class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+									<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-medium group-hover:translate-x-1 transition-transform"
+										href="#">
+										閱讀全文 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+									</a>
+							</div>
+						</div>
+					</article>
+					<!-- Story Card 2 -->
+					<article
+						class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_24px_rgba(39,71,48,0.06)] hover:shadow-[0_12px_32px_rgba(39,71,48,0.12)] transition-all duration-300 flex flex-col">
+						<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container">
+							<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+								data-alt="A peaceful sunlit sunroom with potted plants, gentle watercolor painting on an easel, soft morning mist outside the glass window, gentle sage and sky blue atmosphere, conveying healing and slow pace."
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr5o1y-Do68UXoLFHGSFgqNedWOMSUl777spdqu3WC_P4RbFEKtbBpuS9nepQDYUof1TqEH9zzTK5giNQ2vyGc2K4kYmX_KIi1bYK0xX83_QU5_R1EctdbfUzgUFxCsxgueOR6DoT90b71CrP0Sw3zG_zfysM5lhogplECRyy0XDA4vQQmMEFWzO8GokSgXmAFEkxYRHikfqxK2mScJEfK0vkEbcyn3f00JvAJqkUQUMDgpq3Q-DN7">
+							<div class="absolute top-3 left-3">
+								<span
+									class="inline-flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full text-secondary font-label-sm text-label-sm shadow-sm">
+									<span class="material-symbols-outlined text-[14px]">psychology</span>
+									文字
+								</span>
+							</div>
+						</div>
+						<div class="p-space-lg flex-1 flex flex-col justify-between">
+							<div>
+								<div
+									class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mb-2">
+									<span class="font-medium text-secondary">小柔</span>
+									<span class="">•</span>
+									<span class="">精神分裂症復元歷程</span>
+								</div>
+								<h3
+									class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-2">
+									一點點光，照亮回家的路：在互助小組中卸下防備
+								</h3>
+								<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+									幻聽最嚴重時，世界像一個充滿刺耳噪音的鐵盒。利民會的同路人支援小組沒有人質疑我的恐懼，大家只是安靜地泡好花茶遞給我。那是我五年來第一次感覺被完整理解。
+								</p>
+							</div>
+							<div class="pt-space-md mt-space-md flex items-center justify-between">
+								<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-medium group-hover:translate-x-1 transition-transform"
+									href="#">
+									閱讀全文 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+								</a>
+							</div>
+						</div>
+					</article>
+					<!-- Story Card 3 (Audio Podcast Experience) -->
+					<article
+						class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_24px_rgba(39,71,48,0.06)] hover:shadow-[0_12px_32px_rgba(39,71,48,0.12)] transition-all duration-300 flex flex-col">
+						<div
+							class="relative aspect-[4/3] w-full overflow-hidden bg-tertiary-container/10 p-space-md flex flex-col justify-between">
+							<div class="flex items-center justify-between z-10">
+								<span
+									class="inline-flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full text-tertiary font-label-sm text-label-sm shadow-sm">
+									<span class="material-symbols-outlined text-[14px]">headphones</span>
+									語音
+								</span>
+								<span
+									class="font-label-sm text-label-sm text-tertiary bg-tertiary-fixed/60 px-2 py-0.5 rounded-full">EP.
+									14</span>
+							</div>
+							<!-- Stylized Audio Wave Visual -->
+							<div class="flex items-end justify-center gap-1.5 h-20 my-auto py-2">
+								<div class="w-1.5 bg-tertiary/40 rounded-full h-8 animate-pulse"></div>
+								<div class="w-1.5 bg-tertiary/70 rounded-full h-14 animate-pulse"
+									style="animation-delay: 150ms;"></div>
+								<div class="w-1.5 bg-tertiary rounded-full h-16 animate-pulse"
+									style="animation-delay: 300ms;"></div>
+								<div class="w-1.5 bg-tertiary/90 rounded-full h-12 animate-pulse"
+									style="animation-delay: 200ms;"></div>
+								<div class="w-1.5 bg-tertiary/60 rounded-full h-6 animate-pulse"
+									style="animation-delay: 450ms;"></div>
+								<div class="w-1.5 bg-tertiary/80 rounded-full h-10 animate-pulse"
+									style="animation-delay: 100ms;"></div>
+								<div class="w-1.5 bg-tertiary rounded-full h-14 animate-pulse"
+									style="animation-delay: 350ms;"></div>
+								<div class="w-1.5 bg-tertiary/50 rounded-full h-7 animate-pulse"
+									style="animation-delay: 250ms;"></div>
+							</div>
+							<!-- Audio Player Floating Bar -->
+							<div
+								class="bg-surface-container-lowest/95 backdrop-blur-md rounded-xl p-2.5 flex items-center justify-between gap-2 shadow-sm z-10">
+								<button
+									class="w-9 h-9 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center hover:bg-tertiary-container transition-colors"
+									id="podcast-play-btn" onclick="toggleAudio(this)">
+									<span class="material-symbols-outlined text-[20px]" id="play-icon">play_arrow</span>
+								</button>
+								<div class="flex-1 min-w-0">
+									<div class="h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+										<div class="h-full bg-tertiary rounded-full w-1/3 transition-all duration-300"
+											id="audio-progress"></div>
+									</div>
+									<div
+										class="flex justify-between text-[10px] text-on-surface-variant mt-1 font-label-sm">
+										<span id="audio-time" class="">04:12</span>
+										<span class="">12:45</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="p-space-lg flex-1 flex flex-col justify-between">
+							<div>
+								<div
+									class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mb-2">
+									<span class="font-medium text-tertiary">家明</span>
+									<span class="">•</span>
+									<span class="">朋輩支援專員 (Peer Specialist)</span>
+								</div>
+								<h3
+									class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-2">
+									同行的聲音：從求助者轉化為傾聽者的心路歷程
+								</h3>
+								<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+									用我經歷過的痛，去接住另一個正在下墜的人。復元不是沒有傷疤，而是能帶著傷疤，溫柔地對待世界。
+								</p>
+							</div>
+							<div class="pt-space-md mt-space-md flex items-center justify-between">
+								<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-medium group-hover:translate-x-1 transition-transform"
+									href="#">
+									閱讀全文 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+								</a>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+			<!-- Carers Dialogue (同行的力量・照顧者故事與喘息天地) -->
+			<section class="w-full max-w-[1240px] mx-auto px-gutter pb-space-2xl" id="carer-voices">
+				<!-- Section Header -->
+				<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-sm">
+					<div>
+						<h2 class="font-headline-lg text-headline-lg text-primary">照顧者同行故事</h2>
+						<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+							陪伴不代表一個人承擔所有
+						</p>
+					</div>
+					<a class="inline-flex items-center gap-1 text-primary hover:text-on-surface font-label-lg text-label-lg"
+						href="#">
+						查看所有 <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+					</a>
+				</div>
+				<!-- Carer Story Cards Grid -->
+				<div class="grid grid-col-1 md:grid-cols-3 gap-space-lg">
+					<!-- Carer Card 1 -->
+					<article
+						class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_24px_rgba(39,71,48,0.06)] hover:shadow-[0_12px_32px_rgba(39,71,48,0.12)] transition-all duration-300 flex flex-col">
+						<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container">
+							<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+								data-alt="A quiet kitchen table by a window in soft morning light, a cup of tea and an open notebook, watercolor tones of sage and pale amber, conveying a carer's moment of rest."
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdooew8odalxxYSwmCUdo5zOHIstwlZ5KggchD-GbU4uP8uV-5ze03V93qn6ct9L8JNL-OykGw2kFqmC4F1FU1wCpa2Ci3qseinlkTP2ENgseIZU0u5_80njRO4-BkXpeuriAPW6pMrz1C_o4yAfS4OK-ADjsGr6I_RHKQ1Rc6PDU7Qi_Y2GnzmkWKmihGGyQDNv7Gq8eo4rQyTwYdj2hbaMPa2G90gQqqduDZDFbcHSoaQauh0ZDS">
+							<div class="absolute top-3 left-3">
+								<span
+									class="inline-flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full text-primary font-label-sm text-label-sm shadow-sm">
+									<span class="material-symbols-outlined text-[14px]">self_care</span>
+									自我照顧
+								</span>
+							</div>
+						</div>
+						<div class="p-space-lg flex-1 flex flex-col justify-between">
+							<div>
+								<div
+									class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mb-2">
+									<span class="font-medium text-primary">美玲</span>
+									<span class="">•</span>
+									<span class="">照顧者</span>
+								</div>
+								<h3
+									class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-2">
+									美玲：陪伴者的日常
+								</h3>
+								<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+									家人患病之後，我先學懂照顧一個人之前，也需要照顧自己。
+								</p>
+							</div>
+							<div class="pt-space-md mt-space-md flex items-center justify-between">
+								<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-medium group-hover:translate-x-1 transition-transform"
+									href="#">
+									閱讀全文 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+								</a>
+							</div>
+						</div>
+					</article>
+					<!-- Carer Card 2 -->
+					<article
+						class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_24px_rgba(39,71,48,0.06)] hover:shadow-[0_12px_32px_rgba(39,71,48,0.12)] transition-all duration-300 flex flex-col">
+						<div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container">
+							<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+								data-alt="A sunlit room with family photographs on a wooden shelf and a vintage camera, soft watercolor palette of sage green and sky blue, conveying warmth and everyday family life."
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr5o1y-Do68UXoLFHGSFgqNedWOMSUl777spdqu3WC_P4RbFEKtbBpuS9nepQDYUof1TqEH9zzTK5giNQ2vyGc2K4kYmX_KIi1bYK0xX83_QU5_R1EctdbfUzgUFxCsxgueOR6DoT90b71CrP0Sw3zG_zfysM5lhogplECRyy0XDA4vQQmMEFWzO8GokSgXmAFEkxYRHikfqxK2mScJEfK0vkEbcyn3f00JvAJqkUQUMDgpq3Q-DN7">
+							<div class="absolute top-3 left-3">
+								<span
+									class="inline-flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full text-secondary font-label-sm text-label-sm shadow-sm">
+									<span class="material-symbols-outlined text-[14px]">photo_camera</span>
+									家庭與突破
+								</span>
+							</div>
+						</div>
+						<div class="p-space-lg flex-1 flex flex-col justify-between">
+							<div>
+								<div
+									class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mb-2">
+									<span class="font-medium text-secondary">家明</span>
+									<span class="">•</span>
+									<span class="">照顧者</span>
+								</div>
+								<h3
+									class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-2">
+									家明：按下快門的勇氣
+								</h3>
+								<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+									相入面不只是病，還有笑容，也有一直被忽略的日常。
+								</p>
+							</div>
+							<div class="pt-space-md mt-space-md flex items-center justify-between">
+								<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-medium group-hover:translate-x-1 transition-transform"
+									href="#">
+									閱讀全文 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+								</a>
+							</div>
+						</div>
+					</article>
+					<!-- Carer Card 3 -->
+					<article
+						class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_4px_24px_rgba(39,71,48,0.06)] hover:shadow-[0_12px_32px_rgba(39,71,48,0.12)] transition-all duration-300 flex flex-col">
+						<div
+							class="relative aspect-[4/3] w-full overflow-hidden bg-tertiary-container/10 flex items-center justify-center">
+							<div class="absolute top-3 left-3 z-10">
+								<span
+									class="inline-flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full text-tertiary font-label-sm text-label-sm shadow-sm">
+									<span class="material-symbols-outlined text-[14px]">groups</span>
+									社群與支援
+								</span>
+							</div>
+							<!-- Group Visual -->
+							<div
+								class="flex items-center -space-x-4 group-hover:-space-x-2 transition-all duration-500">
+								<div
+									class="w-16 h-16 rounded-full bg-primary-fixed/70 flex items-center justify-center text-primary ring-4 ring-surface-container-lowest">
+									<span class="material-symbols-outlined text-[28px]">person</span>
+								</div>
+								<div
+									class="w-20 h-20 rounded-full bg-secondary-fixed/70 flex items-center justify-center text-secondary ring-4 ring-surface-container-lowest z-10">
+									<span class="material-symbols-outlined text-[32px]"
+										style="font-variation-settings: 'FILL' 1;">favorite</span>
+								</div>
+								<div
+									class="w-16 h-16 rounded-full bg-tertiary-fixed/70 flex items-center justify-center text-tertiary ring-4 ring-surface-container-lowest">
+									<span class="material-symbols-outlined text-[28px]">person</span>
+								</div>
+							</div>
+						</div>
+						<div class="p-space-lg flex-1 flex flex-col justify-between">
+							<div>
+								<div
+									class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mb-2">
+									<span class="font-medium text-tertiary">同行小組</span>
+									<span class="">•</span>
+									<span class="">三位照顧者</span>
+								</div>
+								<h3
+									class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-2">
+									同行小組：我們並不孤單
+								</h3>
+								<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+									三位照顧者分享如何在同行小組中找到資訊、空間與支持。
+								</p>
+							</div>
+							<div class="pt-space-md mt-space-md flex items-center justify-between">
+								<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-medium group-hover:translate-x-1 transition-transform"
+									href="#">
+									閱讀全文 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+								</a>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+			<!-- Interactive Empathy Heart Wall (留下你的同理祝福) -->
+			<section class="w-full bg-surface-container-low py-space-2xl">
+				<div class="max-w-[1240px] mx-auto px-gutter">
+					<div
+						class="bg-surface-container-lowest rounded-3xl p-space-lg md:p-space-xl shadow-[0_8px_32px_rgba(39,71,48,0.05)]">
+						<div class="text-center max-w-xl mx-auto mb-space-lg">
+							<div
+								class="w-10 h-10 rounded-full bg-secondary-fixed/50 mx-auto flex items-center justify-center text-secondary mb-2">
+								<span class="material-symbols-outlined text-[22px]">favorite</span>
+							</div>
+							<h2 class="font-headline-lg text-headline-lg text-primary">同路人寄語牆</h2>
+							<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+								一句溫柔的肯定，可能成為某個人今天堅持下去的全部理由。留下你的暖心話語。
+							</p>
+						</div>
+						<!-- Quick Message Input Form -->
+						<div class="max-w-xl mx-auto mb-space-xl">
+						</div>
+						<!-- Sticky Notes Masonry Wall -->
+						<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-space-md" id="wishes-wall">
+							<!-- Note 1 -->
+							<div
+								class="relative bg-surface-container p-space-md rounded-xl transform -rotate-1 shadow-sm transition-all hover:rotate-0 hover:shadow-md">
+								<div
+									class="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-secondary-fixed/60 rounded-sm">
+								</div>
+								<p class="font-quote-callout text-[15px] leading-relaxed text-on-surface mt-2">
+									「今天曬到了溫暖的太陽，心情也放晴了一點點。你也一樣，慢慢走，沒關係的。」
+								</p>
+								<div
+									class="mt-space-sm pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+									<span class="">葵芳 義工 阿雯</span>
+								</div>
+							</div>
+							<!-- Note 2 -->
+							<div
+								class="relative bg-surface-container-high p-space-md rounded-xl transform rotate-1 shadow-sm transition-all hover:rotate-0 hover:shadow-md">
+								<div
+									class="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-primary-fixed/60 rounded-sm">
+								</div>
+								<p class="font-quote-callout text-[15px] leading-relaxed text-on-surface mt-2">
+									「致全天下的照顧者：你們已經做得非常棒了，今天請記得獎勵自己一個甜品！」
+								</p>
+								<div
+									class="mt-space-sm pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+									<span class="">東區同路人家屬</span>
+								</div>
+							</div>
+							<!-- Note 3 -->
+							<div
+								class="relative bg-surface-container p-space-md rounded-xl transform -rotate-1.5 shadow-sm transition-all hover:rotate-0 hover:shadow-md">
+								<div
+									class="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-secondary-container/60 rounded-sm">
+								</div>
+								<p class="font-quote-callout text-[15px] leading-relaxed text-on-surface mt-2">
+									「給正感到疲憊的朋友：允許自己今天只呼吸、只發呆，這本身就是很了不起的努力。」
+								</p>
+								<div
+									class="mt-space-sm pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+									<span class="">利民會臨床心理學家</span>
+								</div>
+							</div>
+							<!-- Note 4 -->
+							<div
+								class="relative bg-surface-container-high p-space-md rounded-xl transform rotate-2 shadow-sm transition-all hover:rotate-0 hover:shadow-md">
+								<div
+									class="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-tertiary-fixed/60 rounded-sm">
+								</div>
+								<p class="font-quote-callout text-[15px] leading-relaxed text-on-surface mt-2">
+									「原來，一小步也是一步。感謝利民會的故事，讓我今天終於有勇氣打開大門散步。」
+								</p>
+								<div
+									class="mt-space-sm pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+									<span class="">沙田 復元路上的小鳥</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Community Impact & Donation CTA (社區同行與支持) -->
+			<section class="w-full bg-primary text-on-primary py-space-2xl my-space-lg relative overflow-hidden my-0">
+				<div class="max-w-[1240px] mx-auto px-gutter relative z-10">
+					<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+						<!-- Impact Highlights -->
+						<div class="lg:col-span-7">
+							<span
+								class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm mb-space-sm">
+								<span class="material-symbols-outlined text-[16px]">volunteer_activism</span>
+								守護香港社區心理健康
+							</span>
+							<h2 class="font-headline-lg text-headline-lg text-on-primary mb-space-sm leading-tight">
+								讓一份及時的支持，化為另一段復元生命的溫暖起點。
+							</h2>
+							<p class="font-body-md text-body-md text-on-primary/80 max-w-xl mb-space-lg">
+								利民會致力於讓精神復元人士擁有平等尊嚴的社區生活。您的每一筆捐助，都將直接支持照顧者喘息計劃、日間訓練小組以及 24 小時熱線服務。
+							</p>
+							<div class="grid grid-cols-3 gap-space-md pt-space-xs border-t-0">
+								<div class="bg-primary-container/60 rounded-xl p-3.5">
+									<span
+										class="font-display-lg text-[32px] md:text-[38px] leading-none font-bold text-secondary-container">12,000+</span>
+									<p class="font-body-sm text-body-sm text-on-primary/80 mt-1">每年受惠復元及照顧者人次</p>
+								</div>
+								<div class="bg-primary-container/60 rounded-xl p-3.5">
+									<span
+										class="font-display-lg text-[32px] md:text-[38px] leading-none font-bold text-secondary-container">24/7</span>
+									<p class="font-body-sm text-body-sm text-on-primary/80 mt-1">全年無休電話支援守候</p>
+								</div>
+								<div class="bg-primary-container/60 rounded-xl p-3.5">
+									<span
+										class="font-display-lg text-[32px] md:text-[38px] leading-none font-bold text-secondary-container">100%</span>
+									<p class="font-body-sm text-body-sm text-on-primary/80 mt-1">全心傾聽、接納與尊重</p>
+								</div>
+							</div>
+						</div>
+						<!-- Quick Donation Action Card -->
+						<div
+							class="lg:col-span-5 bg-surface-container-lowest text-on-surface rounded-3xl p-space-lg md:p-space-xl shadow-xl">
+							<h3 class="font-headline-sm text-headline-sm text-primary mb-1">捐助復元同行夥伴</h3>
+							<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+								港幣 $100 以上捐款憑收據可申請香港稅務寬免。
+							</p>
+							<!-- Amount Selector Buttons -->
+							<div class="grid grid-cols-3 gap-2 mb-space-md">
+								<button
+									class="donation-btn py-2 px-3 rounded-xl bg-surface-container font-label-md text-label-md text-on-surface hover:bg-primary-fixed transition-colors text-center font-medium"
+									onclick="selectAmount(this, 300)">HK$ 300</button>
+								<button
+									class="donation-btn py-2 px-3 rounded-xl bg-primary text-on-primary font-label-md text-label-md transition-colors text-center font-medium"
+									onclick="selectAmount(this, 500)">HK$ 500</button>
+								<button
+									class="donation-btn py-2 px-3 rounded-xl bg-surface-container font-label-md text-label-md text-on-surface hover:bg-primary-fixed transition-colors text-center font-medium"
+									onclick="selectAmount(this, 1000)">HK$ 1,000</button>
+							</div>
+							<!-- Impact Context for Selected Amount -->
+							<div class="bg-surface-container-low rounded-xl p-3 text-on-surface-variant font-body-sm text-body-sm mb-space-lg flex items-center gap-2"
+								id="impact-description">
+								<span class="material-symbols-outlined text-primary text-[20px]">lightbulb</span>
+								<span class="">HK$ 500 可支持一位照顧者參加 4 次減壓藝術工作坊</span>
+							</div>
+							<div class="space-y-3">
+								<a class="w-full inline-flex items-center justify-center gap-2 bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed font-label-lg text-label-lg font-semibold py-3.5 px-6 rounded-full transition-all shadow-md"
+									href="#">
+									<span class="material-symbols-outlined text-[20px]">credit_card</span>
+									<span class="">以信用卡或轉數快 (FPS) 支持</span>
+								</a>
+								<div class="text-center font-label-sm text-label-sm text-on-surface-variant">
+									<span class="">或聯絡捐款熱線：(852) 2529 1261</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Interactive JavaScript for Client Micro-interactions -->
+			<script>
+				// Copy quote button feedback
+				function copyQuote(btn) {
+					const text = "「別人的康復像爬山，我的康復像散步。停下來看一朵花，也是在好好生活。」— 利民會復元學員";
+					navigator.clipboard.writeText(text).then(() => {
+						const original = btn.innerHTML;
+						btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span><span>已收藏金句</span>';
+						setTimeout(() => {
+							btn.innerHTML = original;
+						}, 2000);
+					});
+				}
+
+				// Audio Play / Pause toggle animation
+				let isPlaying = false;
+				function toggleAudio(btn) {
+					isPlaying = !isPlaying;
+					const icon = document.getElementById('play-icon');
+					const progress = document.getElementById('audio-progress');
+					const time = document.getElementById('audio-time');
+					if (isPlaying) {
+						icon.innerText = 'pause';
+						progress.style.width = '65%';
+						time.innerText = '08:15';
+					} else {
+						icon.innerText = 'play_arrow';
+						progress.style.width = '33%';
+						time.innerText = '04:12';
+					}
+				}
+
+				// Wall of warmth: add user wish dynamically
+				function postWarmth(e) {
+					e.preventDefault();
+					const input = document.getElementById('message-input');
+					const text = input.value.trim();
+					if (!text) return;
+
+					const wall = document.getElementById('wishes-wall');
+					const note = document.createElement('div');
+					note.className = 'relative bg-surface-container-high p-space-md rounded-xl transform rotate-1 shadow-md transition-all hover:rotate-0 hover:shadow-lg animate-fade-in';
+					note.innerHTML = `
 	<div class="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-primary-fixed/80 rounded-sm"></div>
 	<p class="font-quote-callout text-[15px] leading-relaxed text-on-surface mt-2">
 	  「${text}」
@@ -587,29 +663,97 @@
 	  <span class="text-secondary font-medium">❤️ 1</span>
 	</div>
       `;
-		wall.prepend(note);
-		input.value = '';
-	}
+					wall.prepend(note);
+					input.value = '';
+				}
 
-	// Donation Amount Switcher
-	function selectAmount(button, amount) {
-		document.querySelectorAll('.donation-btn').forEach(btn => {
-			btn.classList.remove('bg-primary', 'text-on-primary');
-			btn.classList.add('bg-surface-container', 'text-on-surface');
-		});
-		button.classList.remove('bg-surface-container', 'text-on-surface');
-		button.classList.add('bg-primary', 'text-on-primary');
+				// Donation Amount Switcher
+				function selectAmount(button, amount) {
+					document.querySelectorAll('.donation-btn').forEach(btn => {
+						btn.classList.remove('bg-primary', 'text-on-primary');
+						btn.classList.add('bg-surface-container', 'text-on-surface');
+					});
+					button.classList.remove('bg-surface-container', 'text-on-surface');
+					button.classList.add('bg-primary', 'text-on-primary');
 
-		const desc = document.getElementById('impact-description');
-		if (amount === 300) {
-			desc.innerHTML = '<span class="material-symbols-outlined text-primary text-[20px]">lightbulb</span><span>HK$ 300 可為 1 位復元人士提供兩次專業情緒電話輔導</span>';
-		} else if (amount === 500) {
-			desc.innerHTML = '<span class="material-symbols-outlined text-primary text-[20px]">lightbulb</span><span>HK$ 500 可支持一位照顧者參加 4 次減壓藝術工作坊</span>';
-		} else {
-			desc.innerHTML = '<span class="material-symbols-outlined text-primary text-[20px]">lightbulb</span><span>HK$ 1,000 可資助弱勢家庭復元者 1 個月的社區生活適應活動器材</span>';
-		}
-	}
-</script>
-	</div></main><footer class="w-full bg-surface-container-low shadow-[0_-4px_24px_rgba(39,71,48,0.03)]"><div class="max-w-[1240px] mx-auto px-gutter pt-space-2xl pb-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-space-2xl"><div class="lg:col-span-5 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[20px]">spa</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary font-semibold">利民會</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Richmond Fellowship of Hong Kong</span></div></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">自 1984 年起推動香港社區精神健康發展，相信每個人都擁有復元能力與尊嚴。以「同行、希望、接納」為本，傾聽每一位復元人士與照顧者的生命故事。</p><div class="flex items-center gap-space-sm pt-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[20px] text-primary">favorite</span><span class="font-body-sm text-body-sm">精神健康綜合社區服務 · 照顧者喘息平台</span></div></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><h3 class="font-headline-sm text-headline-sm text-primary font-medium mb-space-xs">探索與共鳴</h3><nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-medium"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="recovery-journeys" href="#">復元歷程故事閣</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="carers-voices" href="#">照顧者心聲與絮語</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="companion-philosophy" href="#">同行者理念與實踐</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="community-voice" href="#">社區共融故事集</a></nav></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><h3 class="font-headline-sm text-headline-sm text-primary font-medium mb-space-xs">關於與支持</h3><nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-medium"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-rfhk" href="#">認識利民會</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="support-recovery" href="#">立即支持捐款</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="volunteer-join" href="#">成為同行義工</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact-services" href="#">聯絡與服務中心</a></nav></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><h3 class="font-headline-sm text-headline-sm text-primary font-medium mb-space-xs">無障礙與支援</h3><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary">phone_in_talk</span>利民精神健康熱線</span><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary">accessibility_new</span>無障礙網頁設計</span><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary">hearing</span>支援讀屏輔助</span></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant/80"><p class="">© 2025 利民會 Richmond Fellowship of Hong Kong. 版權所有。依據香港法例註冊之慈善機構。</p><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" data-path="privacy-terms" href="#">私隱政策與使用條款</a><a class="hover:text-on-surface transition-colors" data-path="accessibility-statement" href="#">無障礙聲明</a></div></div></div></footer>
+					const desc = document.getElementById('impact-description');
+					if (amount === 300) {
+						desc.innerHTML = '<span class="material-symbols-outlined text-primary text-[20px]">lightbulb</span><span>HK$ 300 可為 1 位復元人士提供兩次專業情緒電話輔導</span>';
+					} else if (amount === 500) {
+						desc.innerHTML = '<span class="material-symbols-outlined text-primary text-[20px]">lightbulb</span><span>HK$ 500 可支持一位照顧者參加 4 次減壓藝術工作坊</span>';
+					} else {
+						desc.innerHTML = '<span class="material-symbols-outlined text-primary text-[20px]">lightbulb</span><span>HK$ 1,000 可資助弱勢家庭復元者 1 個月的社區生活適應活動器材</span>';
+					}
+				}
+			</script>
+		</div>
+	</main>
+	<footer class="w-full bg-surface-container-low shadow-[0_-4px_24px_rgba(39,71,48,0.03)]">
+		<div class="max-w-[1240px] mx-auto px-gutter pt-space-2xl pb-space-xl">
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-space-2xl">
+				<div class="lg:col-span-5 flex flex-col gap-space-md">
+					<div class="flex items-center gap-space-sm">
+						<div
+							class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-on-primary">
+							<span class="material-symbols-outlined text-[20px]">spa</span></div>
+						<div class="flex flex-col"><span
+								class="font-headline-sm text-headline-sm text-primary font-semibold">利民會</span><span
+								class="font-label-sm text-label-sm text-on-surface-variant font-medium">Richmond
+								Fellowship of Hong Kong</span></div>
+					</div>
+					<p class="font-body-md text-body-md text-on-surface-variant max-w-md">自 1984
+						年起推動香港社區精神健康發展，相信每個人都擁有復元能力與尊嚴。以「同行、希望、接納」為本，傾聽每一位復元人士與照顧者的生命故事。</p>
+					<div class="flex items-center gap-space-sm pt-space-xs text-on-surface-variant"><span
+							class="material-symbols-outlined text-[20px] text-primary">favorite</span><span
+							class="font-body-sm text-body-sm">精神健康綜合社區服務 · 照顧者喘息平台</span></div>
+				</div>
+				<div class="lg:col-span-3 flex flex-col gap-space-sm">
+					<h3 class="font-headline-sm text-headline-sm text-primary font-medium mb-space-xs">探索與共鳴</h3>
+					<nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-medium"><a
+							class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="recovery-journeys" href="#">復元歷程故事閣</a><a
+							class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="carers-voices" href="#">照顧者心聲與絮語</a><a
+							class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="companion-philosophy" href="#">同行者理念與實踐</a><a
+							class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="community-voice" href="#">社區共融故事集</a></nav>
+				</div>
+				<div class="lg:col-span-2 flex flex-col gap-space-sm">
+					<h3 class="font-headline-sm text-headline-sm text-primary font-medium mb-space-xs">關於與支持</h3>
+					<nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-medium"><a
+							class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="about-rfhk" href="#">認識利民會</a><a
+							class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="support-recovery" href="#">立即支持捐款</a><a
+							class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="volunteer-join" href="#">成為同行義工</a><a
+							class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="contact-services" href="#">聯絡與服務中心</a></nav>
+				</div>
+				<div class="lg:col-span-2 flex flex-col gap-space-sm">
+					<h3 class="font-headline-sm text-headline-sm text-primary font-medium mb-space-xs">無障礙與支援</h3>
+					<div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><span
+							class="flex items-center gap-space-xs"><span
+								class="material-symbols-outlined text-[18px] text-primary">phone_in_talk</span>利民精神健康熱線</span><span
+							class="flex items-center gap-space-xs"><span
+								class="material-symbols-outlined text-[18px] text-primary">accessibility_new</span>無障礙網頁設計</span><span
+							class="flex items-center gap-space-xs"><span
+								class="material-symbols-outlined text-[18px] text-primary">hearing</span>支援讀屏輔助</span>
+					</div>
+				</div>
+			</div>
+			<div
+				class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant/80">
+				<p class="">© 2025 利民會 Richmond Fellowship of Hong Kong. 版權所有。依據香港法例註冊之慈善機構。</p>
+				<div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors"
+						data-path="privacy-terms" href="#">私隱政策與使用條款</a><a
+						class="hover:text-on-surface transition-colors" data-path="accessibility-statement"
+						href="#">無障礙聲明</a></div>
+			</div>
+		</div>
+	</footer>
 
-</body></html>
+</body>
+
+</html>
