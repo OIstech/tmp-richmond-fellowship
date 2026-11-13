@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+
+<head>
+	<title>義工同行故事｜利民會</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+TC:wght@400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500;600;700&amp;display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+		rel="stylesheet">
+	<style>
+		@layer base {
+
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				overscroll-behavior: none;
+			}
+
+			main>:first-child {
+				margin-top: 0 !important;
+			}
+
+			main>:last-child {
+				margin-bottom: 0 !important;
+			}
+		}
+
+		/* CJK font follows the page language: lang="ja" uses Noto Sans JP, otherwise Noto Sans TC */
+		:root {
+			--font-cjk: "Noto Sans TC";
+		}
+
+		:root:lang(ja) {
+			--font-cjk: "Noto Sans JP";
+		}
+
+		::-webkit-scrollbar {
+			display: none;
+		}
+	</style>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script
+		id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"on-error-container": "#93000a", "on-tertiary-fixed-variant": "#245570", "background": "#fcfcfb", "on-secondary-fixed-variant": "#36603f", "surface-bright": "#fcfcfb", "surface-container": "#efefec", "secondary-container": "#cfe6d4", "on-primary-fixed-variant": "#8c3a24", "on-tertiary": "#ffffff", "inverse-on-surface": "#f3f2ef", "secondary-fixed-dim": "#b4d6bc", "surface-container-lowest": "#ffffff", "surface": "#fcfcfb", "on-secondary-container": "#1f4a2c", "on-surface-variant": "#5c5852", "surface-variant": "#e1e1dc", "primary-fixed": "#ffdfd4", "tertiary-container": "#4f87a8", "tertiary-fixed-dim": "#a9d0e6", "on-background": "#24211f", "surface-container-low": "#f6f6f4", "on-surface": "#24211f", "error-container": "#ffdad6", "on-tertiary-fixed": "#001e2d", "outline-variant": "#d3d0ca", "secondary": "#4f7a5c", "on-primary": "#ffffff", "tertiary": "#3d6f8f", "primary": "#b14f36", "primary-fixed-dim": "#f6b8a5", "on-primary-container": "#ffe5dc", "inverse-primary": "#f6b8a5", "inverse-surface": "#33302d", "surface-tint": "#d06f52", "error": "#ba1a1a", "tertiary-fixed": "#d6ebf7", "surface-container-high": "#e8e8e4", "on-primary-fixed": "#3d1206", "surface-container-highest": "#e1e1dc", "on-error": "#ffffff", "primary-container": "#d06f52", "on-secondary": "#ffffff", "surface-dim": "#d9d9d4", "on-tertiary-container": "#d8ecf8", "secondary-fixed": "#dcefe0", "outline": "#87827b", "on-secondary-fixed": "#0b2414"}, borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"}, spacing: {"space-2xl": "4rem", "gutter": "1.5rem", "space-md": "1rem", "space-xl": "2.5rem", "margin-mobile": "1.25rem", "space-sm": "0.5rem", "margin": "3rem", "gutter-mobile": "1rem", "space-xs": "0.25rem", "space-lg": "1.5rem"}, fontFamily: {"headline-lg-mobile": ["Inter", "var(--font-cjk)", "sans-serif"], "quote-callout": ["Inter", "var(--font-cjk)", "sans-serif"], "label-md": ["Inter", "var(--font-cjk)", "sans-serif"], "headline-sm": ["Inter", "var(--font-cjk)", "sans-serif"], "label-sm": ["Inter", "var(--font-cjk)", "sans-serif"], "display-lg-mobile": ["Inter", "var(--font-cjk)", "sans-serif"], "display-lg": ["Inter", "var(--font-cjk)", "sans-serif"], "headline-md": ["Inter", "var(--font-cjk)", "sans-serif"], "label-lg": ["Inter", "var(--font-cjk)", "sans-serif"], "body-lg": ["Inter", "var(--font-cjk)", "sans-serif"], "body-sm": ["Inter", "var(--font-cjk)", "sans-serif"], "headline-lg": ["Inter", "var(--font-cjk)", "sans-serif"], "body-md": ["Inter", "var(--font-cjk)", "sans-serif"]}, fontSize: {"headline-lg-mobile": ["24px", {"lineHeight": "36px", "fontWeight": "600"}], "quote-callout": ["19px", {"lineHeight": "34px", "letterSpacing": "0.015em", "fontWeight": "400"}], "label-md": ["12px", {"lineHeight": "18px", "letterSpacing": "0.03em", "fontWeight": "500"}], "headline-sm": ["20px", {"lineHeight": "30px", "fontWeight": "500"}], "label-sm": ["11px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500"}], "display-lg-mobile": ["30px", {"lineHeight": "44px", "letterSpacing": "0.01em", "fontWeight": "600"}], "display-lg": ["44px", {"lineHeight": "60px", "letterSpacing": "0.02em", "fontWeight": "600"}], "headline-md": ["24px", {"lineHeight": "36px", "fontWeight": "500"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}], "body-lg": ["17px", {"lineHeight": "30px", "fontWeight": "400"}], "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}], "headline-lg": ["32px", {"lineHeight": "46px", "fontWeight": "600"}], "body-md": ["15px", {"lineHeight": "26px", "fontWeight": "400"}]}}}};</script>
+</head>
+
+<body
+	class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+	<header
+		class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_4px_24px_rgba(36,33,31,0.04)]">
+		<div class="h-20 max-w-[1240px] mx-auto px-gutter flex items-center justify-between gap-space-md"><a
+				class="flex items-center gap-space-sm group focus:outline-none" data-path="home" href="index.html">
+				<div class="flex flex-col"><span
+						class="font-headline-sm text-headline-sm text-primary tracking-tight font-semibold">利民會</span><span
+						class="font-label-sm text-label-sm text-on-surface-variant font-medium tracking-wide uppercase">Richmond
+						Fellowship of Hong Kong</span></div>
+			</a>
+			<nav class="hidden lg:flex items-center gap-space-lg"
+				data-active-classes="bg-primary-container text-on-primary font-medium rounded-full px-space-md py-space-xs">
+				<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors"
+					data-path="recovery-journeys" href="category-recovery.html">復元故事</a><a
+					class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors"
+					data-path="carers-voices" href="category-carers.html">照顧者同行故事</a><a
+					class="font-label-lg text-label-lg text-primary font-semibold transition-colors"
+					data-path="volunteer-stories" aria-current="page" href="category-volunteers.html">義工同行故事</a><a
+					class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors"
+					data-path="companion-philosophy" href="#">同路人寄語牆</a></nav>
+			<div class="flex items-center gap-space-md"><a
+					class="inline-flex items-center gap-space-xs rounded-full bg-primary px-space-lg py-space-sm font-label-lg text-label-lg text-on-primary shadow-[0_4px_16px_rgba(36,33,31,0.16)] hover:bg-primary-container hover:text-on-primary transition-all"
+					data-path="support-recovery" href="#"><span
+						class="material-symbols-outlined text-[18px] text-on-primary">volunteer_activism</span><span
+						class="">支持復元同行</span></a>
+			</div>
+		</div>
+	</header>
+	<main class="relative w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]">
+		<!-- Decorative background curves (sit behind all content) -->
+		<div aria-hidden="true" class="pointer-events-none absolute inset-0 overflow-hidden z-0">
+			<svg class="absolute left-0 top-[22%] w-full h-[260px]" viewBox="0 0 1440 260" preserveAspectRatio="none" fill="none">
+				<path d="M-20 170 C 240 40, 460 250, 760 140 S 1220 30, 1460 120" stroke="#f6b8a5" stroke-opacity="0.3" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+			</svg>
+			<svg class="absolute left-0 top-[58%] w-full h-[300px]" viewBox="0 0 1440 300" preserveAspectRatio="none" fill="none">
+				<path d="M-20 90 C 300 250, 620 20, 900 170 S 1300 260, 1460 140" stroke="#b4d6bc" stroke-opacity="0.3" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+			</svg>
+		</div>
+		<div class="relative z-10 w-full">
+
+			<!-- Category header -->
+			<section class="max-w-[880px] mx-auto px-gutter pt-space-2xl pb-space-xl text-center">
+				<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface">義工同行故事</h1>
+				<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-sm max-w-[640px] mx-auto">有些同行，不是走在前面，而是在旁邊一起走。</p>
+			</section>
+			<!-- Post list: one post per row -->
+			<section class="max-w-[960px] mx-auto px-gutter pb-space-2xl">
+				<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/50 p-space-lg md:p-space-xl">
+				<article class="group py-space-lg first:pt-0 border-b border-outline-variant/60 last:border-b-0">
+					<a href="post.html" class="flex flex-col sm:flex-row gap-space-md sm:gap-space-lg">
+						<div class="shrink-0 w-full sm:w-[260px] aspect-[4/3] overflow-hidden rounded-lg bg-surface-container">
+							<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdooew8odalxxYSwmCUdo5zOHIstwlZ5KggchD-GbU4uP8uV-5ze03V93qn6ct9L8JNL-OykGw2kFqmC4F1FU1wCpa2Ci3qseinlkTP2ENgseIZU0u5_80njRO4-BkXpeuriAPW6pMrz1C_o4yAfS4OK-ADjsGr6I_RHKQ1Rc6PDU7Qi_Y2GnzmkWKmihGGyQDNv7Gq8eo4rQyTwYdj2hbaMPa2G90gQqqduDZDFbcHSoaQauh0ZDS" alt="">
+						</div>
+						<div class="flex-1 min-w-0 flex flex-col justify-center">
+							<div class="flex flex-wrap items-center gap-2 mb-2">
+								<span class="inline-flex items-center gap-1 rounded-full bg-tertiary-fixed/70 text-on-tertiary-fixed-variant px-3 py-0.5 font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">local_cafe</span>陪伴</span>
+								<span class="font-label-sm text-label-sm text-on-surface-variant">2026年10月30日</span>
+							</div>
+							<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-1">星期三下午的茶聚</h2>
+							<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant mb-2">
+								<span class="font-medium text-tertiary">阿雯</span><span>•</span><span>葵芳 義工</span>
+							</div>
+							<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">每星期三，我都會到中心和會員一起泡茶、聊天。起初我以為義工要「幫」別人，後來才發現，很多時候只是坐在旁邊，就已經足夠。</p>
+							<span class="mt-space-sm inline-flex items-center gap-1 font-label-md text-label-md text-primary font-medium group-hover:translate-x-1 transition-transform">
+								閱讀全文 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+							</span>
+						</div>
+					</a>
+				</article>
+				<article class="group py-space-lg first:pt-0 border-b border-outline-variant/60 last:border-b-0">
+					<a href="post.html" class="flex flex-col sm:flex-row gap-space-md sm:gap-space-lg">
+						<div class="shrink-0 w-full sm:w-[260px] aspect-[4/3] overflow-hidden rounded-lg bg-surface-container">
+							<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr5o1y-Do68UXoLFHGSFgqNedWOMSUl777spdqu3WC_P4RbFEKtbBpuS9nepQDYUof1TqEH9zzTK5giNQ2vyGc2K4kYmX_KIi1bYK0xX83_QU5_R1EctdbfUzgUFxCsxgueOR6DoT90b71CrP0Sw3zG_zfysM5lhogplECRyy0XDA4vQQmMEFWzO8GokSgXmAFEkxYRHikfqxK2mScJEfK0vkEbcyn3f00JvAJqkUQUMDgpq3Q-DN7" alt="">
+						</div>
+						<div class="flex-1 min-w-0 flex flex-col justify-center">
+							<div class="flex flex-wrap items-center gap-2 mb-2">
+								<span class="inline-flex items-center gap-1 rounded-full bg-secondary-fixed/70 text-on-secondary-fixed-variant px-3 py-0.5 font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">potted_plant</span>社區活動</span>
+								<span class="font-label-sm text-label-sm text-on-surface-variant">2026年10月18日</span>
+							</div>
+							<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-1">一起種一個小花園</h2>
+							<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant mb-2">
+								<span class="font-medium text-secondary">子軒</span><span>•</span><span>大學生義工</span>
+							</div>
+							<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">我們在天台開了一個小小的花園。種子要等，花要等，人也要等。我在那裡學會了耐心，也交到了很好的朋友。</p>
+							<span class="mt-space-sm inline-flex items-center gap-1 font-label-md text-label-md text-primary font-medium group-hover:translate-x-1 transition-transform">
+								閱讀全文 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+							</span>
+						</div>
+					</a>
+				</article>
+				<article class="group py-space-lg first:pt-0 border-b border-outline-variant/60 last:border-b-0">
+					<a href="post.html" class="flex flex-col sm:flex-row gap-space-md sm:gap-space-lg">
+						<div class="shrink-0 w-full sm:w-[260px] aspect-[4/3] overflow-hidden rounded-lg bg-surface-container">
+							<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="hero.svg" alt="">
+						</div>
+						<div class="flex-1 min-w-0 flex flex-col justify-center">
+							<div class="flex flex-wrap items-center gap-2 mb-2">
+								<span class="inline-flex items-center gap-1 rounded-full bg-primary-fixed/70 text-on-primary-fixed-variant px-3 py-0.5 font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">diversity_3</span>探訪</span>
+								<span class="font-label-sm text-label-sm text-on-surface-variant">2026年10月6日</span>
+							</div>
+							<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-1">退休後，我多了一班朋友</h2>
+							<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant mb-2">
+								<span class="font-medium text-primary">黃先生</span><span>•</span><span>退休義工</span>
+							</div>
+							<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">退休後我以為日子會變得很空。現在每星期去探訪兩次，聽他們說以前的故事。原來被需要，也是一種很溫暖的感覺。</p>
+							<span class="mt-space-sm inline-flex items-center gap-1 font-label-md text-label-md text-primary font-medium group-hover:translate-x-1 transition-transform">
+								閱讀全文 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+							</span>
+						</div>
+					</a>
+				</article>
+				<article class="group py-space-lg first:pt-0 border-b border-outline-variant/60 last:border-b-0">
+					<a href="post.html" class="flex flex-col sm:flex-row gap-space-md sm:gap-space-lg">
+						<div class="shrink-0 w-full sm:w-[260px] aspect-[4/3] overflow-hidden rounded-lg bg-surface-container">
+							<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdooew8odalxxYSwmCUdo5zOHIstwlZ5KggchD-GbU4uP8uV-5ze03V93qn6ct9L8JNL-OykGw2kFqmC4F1FU1wCpa2Ci3qseinlkTP2ENgseIZU0u5_80njRO4-BkXpeuriAPW6pMrz1C_o4yAfS4OK-ADjsGr6I_RHKQ1Rc6PDU7Qi_Y2GnzmkWKmihGGyQDNv7Gq8eo4rQyTwYdj2hbaMPa2G90gQqqduDZDFbcHSoaQauh0ZDS" alt="">
+						</div>
+						<div class="flex-1 min-w-0 flex flex-col justify-center">
+							<div class="flex flex-wrap items-center gap-2 mb-2">
+								<span class="inline-flex items-center gap-1 rounded-full bg-tertiary-fixed/70 text-on-tertiary-fixed-variant px-3 py-0.5 font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">diversity_1</span>朋輩同行</span>
+								<span class="font-label-sm text-label-sm text-on-surface-variant">2026年9月22日</span>
+							</div>
+							<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-1">走過同一條路，所以更明白</h2>
+							<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant mb-2">
+								<span class="font-medium text-tertiary">曉晴</span><span>•</span><span>朋輩義工</span>
+							</div>
+							<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">我也曾經是會員。現在以義工的身份回來，我知道那種說不出口的感受。我不用給答案，只要讓對方知道：你不是一個人。</p>
+							<span class="mt-space-sm inline-flex items-center gap-1 font-label-md text-label-md text-primary font-medium group-hover:translate-x-1 transition-transform">
+								閱讀全文 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+							</span>
+						</div>
+					</a>
+				</article>
+				<article class="group py-space-lg first:pt-0 border-b border-outline-variant/60 last:border-b-0">
+					<a href="post.html" class="flex flex-col sm:flex-row gap-space-md sm:gap-space-lg">
+						<div class="shrink-0 w-full sm:w-[260px] aspect-[4/3] overflow-hidden rounded-lg bg-surface-container">
+							<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr5o1y-Do68UXoLFHGSFgqNedWOMSUl777spdqu3WC_P4RbFEKtbBpuS9nepQDYUof1TqEH9zzTK5giNQ2vyGc2K4kYmX_KIi1bYK0xX83_QU5_R1EctdbfUzgUFxCsxgueOR6DoT90b71CrP0Sw3zG_zfysM5lhogplECRyy0XDA4vQQmMEFWzO8GokSgXmAFEkxYRHikfqxK2mScJEfK0vkEbcyn3f00JvAJqkUQUMDgpq3Q-DN7" alt="">
+						</div>
+						<div class="flex-1 min-w-0 flex flex-col justify-center">
+							<div class="flex flex-wrap items-center gap-2 mb-2">
+								<span class="inline-flex items-center gap-1 rounded-full bg-primary-fixed/70 text-on-primary-fixed-variant px-3 py-0.5 font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">content_cut</span>手作</span>
+								<span class="font-label-sm text-label-sm text-on-surface-variant">2026年9月10日</span>
+							</div>
+							<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-1">一針一線的陪伴</h2>
+							<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant mb-2">
+								<span class="font-medium text-primary">美華</span><span>•</span><span>手作班義工</span>
+							</div>
+							<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">在手作班，大家一邊縫，一邊慢慢說起自己的事。做得快慢都不要緊，重要的是我們一起完成了一件作品。</p>
+							<span class="mt-space-sm inline-flex items-center gap-1 font-label-md text-label-md text-primary font-medium group-hover:translate-x-1 transition-transform">
+								閱讀全文 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+							</span>
+						</div>
+					</a>
+				</article>
+				</div>
+			<nav class="flex items-center justify-center gap-2 mt-space-xl font-label-lg text-label-lg" aria-label="分頁">
+				<span class="w-9 h-9 inline-flex items-center justify-center rounded-full text-on-surface-variant/40"><span class="material-symbols-outlined text-[18px]">chevron_left</span></span>
+				<a href="#" aria-current="page" class="w-9 h-9 inline-flex items-center justify-center rounded-full bg-primary-fixed text-on-primary-fixed-variant font-semibold">1</a>
+				<a href="#" class="w-9 h-9 inline-flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container">2</a>
+				<a href="#" class="w-9 h-9 inline-flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container">3</a>
+				<a href="#" class="w-9 h-9 inline-flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container"><span class="material-symbols-outlined text-[18px]">chevron_right</span></a>
+			</nav>
+			</section>
+		</div>
+	</main>
+	<footer class="w-full bg-surface-container-low shadow-[0_-4px_24px_rgba(36,33,31,0.03)]">
+		<div class="max-w-[1240px] mx-auto px-gutter pt-space-2xl pb-space-xl">
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-space-2xl">
+				<div class="lg:col-span-5 flex flex-col gap-space-md">
+					<div class="flex items-center gap-space-sm">
+						<div
+							class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-on-primary">
+							<span class="material-symbols-outlined text-[20px]">spa</span></div>
+						<div class="flex flex-col"><span
+								class="font-headline-sm text-headline-sm text-primary font-semibold">利民會</span><span
+								class="font-label-sm text-label-sm text-on-surface-variant font-medium">Richmond
+								Fellowship of Hong Kong</span></div>
+					</div>
+					<p class="font-body-md text-body-md text-on-surface-variant max-w-md">自 1984
+						年起推動香港社區精神健康發展，相信每個人都擁有復元能力與尊嚴。以「同行、希望、接納」為本，傾聽每一位復元人士與照顧者的生命故事。</p>
+					<div class="flex items-center gap-space-sm pt-space-xs text-on-surface-variant"><span
+							class="material-symbols-outlined text-[20px] text-primary">favorite</span><span
+							class="font-body-sm text-body-sm">精神健康綜合社區服務 · 照顧者喘息平台</span></div>
+				</div>
+				<div class="lg:col-span-3 flex flex-col gap-space-sm">
+					<h3 class="font-headline-sm text-headline-sm text-primary font-medium mb-space-xs">探索與共鳴</h3>
+					<nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-medium"><a
+							class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="recovery-journeys" href="category-recovery.html">復元歷程故事閣</a><a
+							class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="carers-voices" href="category-carers.html">照顧者心聲與絮語</a><a
+							class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="volunteer-stories" href="category-volunteers.html">義工同行故事</a><a
+							class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="companion-philosophy" href="#">同行者理念與實踐</a><a
+							class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="community-voice" href="#">社區共融故事集</a></nav>
+				</div>
+				<div class="lg:col-span-2 flex flex-col gap-space-sm">
+					<h3 class="font-headline-sm text-headline-sm text-primary font-medium mb-space-xs">關於與支持</h3>
+					<nav class="flex flex-col gap-space-xs" data-active-classes="text-primary font-medium"><a
+							class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="about-rfhk" href="#">認識利民會</a><a
+							class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="support-recovery" href="#">立即支持捐款</a><a
+							class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="volunteer-join" href="#">成為同行義工</a><a
+							class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+							data-path="contact-services" href="#">聯絡與服務中心</a></nav>
+				</div>
+				<div class="lg:col-span-2 flex flex-col gap-space-sm">
+					<h3 class="font-headline-sm text-headline-sm text-primary font-medium mb-space-xs">無障礙與支援</h3>
+					<div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><span
+							class="flex items-center gap-space-xs"><span
+								class="material-symbols-outlined text-[18px] text-primary">phone_in_talk</span>利民精神健康熱線</span><span
+							class="flex items-center gap-space-xs"><span
+								class="material-symbols-outlined text-[18px] text-primary">accessibility_new</span>無障礙網頁設計</span><span
+							class="flex items-center gap-space-xs"><span
+								class="material-symbols-outlined text-[18px] text-primary">hearing</span>支援讀屏輔助</span>
+					</div>
+				</div>
+			</div>
+			<div
+				class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant/80">
+				<p class="">© 2025 利民會 Richmond Fellowship of Hong Kong. 版權所有。依據香港法例註冊之慈善機構。</p>
+				<div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors"
+						data-path="privacy-terms" href="#">私隱政策與使用條款</a><a
+						class="hover:text-on-surface transition-colors" data-path="accessibility-statement"
+						href="#">無障礙聲明</a></div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
