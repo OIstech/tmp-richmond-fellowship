@@ -194,9 +194,6 @@
 						<img alt="插畫：兩位朋友並肩坐在湖邊草坡，遠眺雪山與晨光，櫻花枝輕輕垂下。"
 							class="w-full h-full object-cover object-center transform scale-[1.01] hover:scale-[1.02] transition-transform duration-700 ease-out"
 							src="hero.jpeg">
-						<div
-							class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent pointer-events-none">
-						</div>
 					</div>
 					<!-- Hero Subtext & Quick Action Bar -->
 				</div>
@@ -779,27 +776,131 @@
 								</div>
 							</div>
 						</div>
-						<!-- Quick Donation Action Card -->
+						<!-- Combined Action Card: 求助 / 捐款 / 了解更多 / 分享故事 -->
 						<div
-							class="lg:col-span-5 bg-surface-container-lowest text-on-surface rounded-3xl p-space-lg md:p-space-xl border border-outline-variant/60">
-							<h3 class="font-headline-sm text-headline-sm text-primary mb-1">捐助復元同行夥伴</h3>
+							class="lg:col-span-5 bg-surface-container-lowest text-on-surface rounded-3xl p-space-lg md:p-space-xl border border-outline-variant/60 shadow-[0_8px_32px_rgba(36,33,31,0.05)]">
+							<h3 class="font-headline-sm text-headline-sm text-primary mb-1">與我們同行</h3>
 							<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
-								港幣 $100 以上捐款憑收據可申請香港稅務寬免。
+								無論你需要支援、想伸出援手，還是想說一聲謝謝，都可以從這裡開始。
 							</p>
-							<div class="space-y-3">
-								<a class="w-full inline-flex items-center justify-center gap-2 bg-secondary-fixed text-on-secondary-fixed-variant hover:bg-secondary-fixed/80 font-label-lg text-label-lg font-medium py-3 px-6 rounded-full transition-colors"
-									href="https://google.com" target="_blank" rel="noopener">
-									<span class="material-symbols-outlined text-[20px]">volunteer_activism</span>
-									<span class="">立即捐款</span>
+							<div class="grid grid-cols-2 gap-3">
+								<!-- TODO: 求助 link to be confirmed -->
+								<a href="#" data-link="help"
+									class="group col-span-2 flex items-center gap-3 rounded-2xl bg-primary text-on-primary px-4 py-3.5 shadow-[0_4px_16px_rgba(177,79,54,0.22)] hover:bg-primary-container transition-colors">
+									<span class="w-10 h-10 shrink-0 rounded-full bg-white/15 flex items-center justify-center">
+										<span class="material-symbols-outlined text-[22px]">support_agent</span>
+									</span>
+									<span class="flex-1 min-w-0">
+										<span class="block font-label-lg text-[16px] font-semibold">求助</span>
+										<span class="block font-body-sm text-body-sm text-on-primary/80">需要有人聆聽？我們在這裡</span>
+									</span>
+									<span class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-0.5">arrow_forward</span>
 								</a>
-								<div class="text-center font-label-sm text-label-sm text-on-surface-variant">
-									<span class="">或聯絡捐款熱線：(852) 2529 1261</span>
-								</div>
+								<!-- TODO: 捐款 link TBD -->
+								<a href="#" data-link="donate"
+									class="group flex flex-col gap-2 rounded-2xl bg-secondary-fixed text-on-secondary-fixed-variant p-4 hover:bg-secondary-container transition-colors">
+									<span class="material-symbols-outlined text-[24px]">volunteer_activism</span>
+									<span class="font-label-lg text-label-lg font-semibold">捐款</span>
+									<span class="font-body-sm text-[12px] leading-snug opacity-80">支持復元及照顧者服務</span>
+								</a>
+								<!-- TODO: 了解更多 link TBD -->
+								<a href="#" data-link="learn-more"
+									class="group flex flex-col gap-2 rounded-2xl bg-tertiary-fixed text-on-tertiary-fixed-variant p-4 hover:bg-tertiary-fixed-dim/60 transition-colors">
+									<span class="material-symbols-outlined text-[24px]">info</span>
+									<span class="font-label-lg text-label-lg font-semibold">了解更多</span>
+									<span class="font-body-sm text-[12px] leading-snug opacity-80">認識利民會的服務</span>
+								</a>
+								<button type="button" onclick="openStoryDialog()"
+									class="group col-span-2 flex items-center gap-3 rounded-2xl border border-dashed border-primary/40 bg-primary-fixed/40 text-on-primary-fixed-variant px-4 py-3 hover:bg-primary-fixed/70 transition-colors text-left">
+									<span class="material-symbols-outlined text-[22px]">edit_note</span>
+									<span class="flex-1 min-w-0">
+										<span class="block font-label-lg text-label-lg font-semibold">分享故事</span>
+										<span class="block font-body-sm text-[12px] opacity-80">留下一句感謝或鼓勵的說話</span>
+									</span>
+									<span class="material-symbols-outlined text-[20px]">add</span>
+								</button>
+							</div>
+							<div class="mt-space-md pt-space-md border-t border-outline-variant/50 font-label-sm text-label-sm text-on-surface-variant text-center space-y-0.5">
+								<p>港幣 $100 以上捐款憑收據可申請香港稅務寬免</p>
+								<p>捐款熱線：(852) 2529 1261</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+			<!-- 分享故事 Popup Form -->
+			<dialog id="story-dialog"
+				class="w-[calc(100%-2rem)] max-w-md rounded-3xl p-0 bg-surface-container-lowest text-on-surface shadow-[0_24px_64px_rgba(36,33,31,0.24)] backdrop:bg-on-surface/40 backdrop:backdrop-blur-sm">
+				<!-- TODO: form action to be confirmed -->
+				<form id="story-form" action="" method="post" class="p-space-lg md:p-space-xl" onsubmit="submitStory(event)">
+					<div class="flex items-start justify-between gap-4 mb-space-md">
+						<div>
+							<h3 class="font-headline-sm text-headline-sm text-primary">分享故事</h3>
+							<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">寫下一句感謝或鼓勵，給正在路上的同路人。</p>
+						</div>
+						<button type="button" onclick="closeStoryDialog()" aria-label="關閉"
+							class="w-9 h-9 shrink-0 rounded-full hover:bg-surface-container flex items-center justify-center text-on-surface-variant">
+							<span class="material-symbols-outlined text-[20px]">close</span>
+						</button>
+					</div>
+					<div id="story-fields" class="space-y-space-md">
+						<label class="block">
+							<span class="block font-label-lg text-label-lg mb-1.5">名字</span>
+							<input name="name" required maxlength="30" autocomplete="nickname" placeholder="例如：沙田 小鳥"
+								class="w-full rounded-xl border border-outline-variant bg-surface px-4 py-2.5 font-body-md text-body-md focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
+						</label>
+						<label class="block">
+							<span class="flex items-baseline justify-between mb-1.5">
+								<span class="font-label-lg text-label-lg">感謝說話</span>
+								<span id="story-count" class="font-label-sm text-label-sm text-on-surface-variant">0 / 50</span>
+							</span>
+							<textarea name="message" required maxlength="50" rows="3" placeholder="想對誰說聲謝謝？"
+								oninput="document.getElementById('story-count').textContent = this.value.length + ' / 50'"
+								class="w-full resize-none rounded-xl border border-outline-variant bg-surface px-4 py-2.5 font-body-md text-body-md focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"></textarea>
+						</label>
+						<button type="submit"
+							class="w-full inline-flex items-center justify-center gap-2 rounded-full bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg py-3 transition-colors">
+							<span class="material-symbols-outlined text-[18px]">send</span>
+							送出
+						</button>
+					</div>
+					<div id="story-thanks" class="hidden text-center py-space-md">
+						<div class="w-12 h-12 rounded-full bg-secondary-fixed text-secondary mx-auto flex items-center justify-center mb-2">
+							<span class="material-symbols-outlined">favorite</span>
+						</div>
+						<p class="font-headline-sm text-headline-sm text-on-surface">謝謝你的分享</p>
+						<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">你的說話會成為別人的一點力量。</p>
+						<button type="button" onclick="closeStoryDialog()"
+							class="mt-space-md inline-flex items-center justify-center rounded-full border border-outline-variant px-6 py-2 font-label-lg text-label-lg hover:bg-surface-container">
+							關閉
+						</button>
+					</div>
+				</form>
+			</dialog>
+			<script>
+				const storyDialog = document.getElementById('story-dialog');
+				function openStoryDialog() {
+					document.getElementById('story-fields').classList.remove('hidden');
+					document.getElementById('story-thanks').classList.add('hidden');
+					storyDialog.showModal();
+				}
+				function closeStoryDialog() { storyDialog.close(); }
+				// Close when clicking the backdrop
+				storyDialog.addEventListener('click', (e) => { if (e.target === storyDialog) storyDialog.close(); });
+
+				function submitStory(e) {
+					// TODO: form action to be confirmed — remove preventDefault (or send via fetch) once the endpoint is ready
+					e.preventDefault();
+					const form = e.target;
+					const name = form.name.value.trim();
+					const message = form.message.value.trim();
+					if (!name || !message) return;
+					form.reset();
+					document.getElementById('story-count').textContent = '0 / 50';
+					document.getElementById('story-fields').classList.add('hidden');
+					document.getElementById('story-thanks').classList.remove('hidden');
+				}
+			</script>
 			<!-- Interactive JavaScript for Client Micro-interactions -->
 			<script>
 				// Copy quote button feedback
